@@ -1,0 +1,162 @@
+---
+sidebar: sidebar 
+permalink: concepts/capacity-requirements.html 
+keywords: storage capacity requirement for service levels, capacity definition per PSL, 
+summary: 'I requisiti di capacità per i livelli di servizio variano a seconda del tipo di archiviazione di file, blocchi, oggetti o cloud supportata dall"abbonamento Keystone STaaS.' 
+---
+= Requisiti di capacità per i livelli di servizio prestazionali
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+I requisiti di capacità per i livelli di servizio delle prestazioni Keystone STaaS variano tra le offerte di archiviazione di file, blocchi, oggetti e cloud supportate dall'abbonamento Keystone STaaS.
+
+
+
+== Requisiti minimi di capacità per i servizi di file e blocchi
+
+La capacità minima e la capacità incrementale consentite per abbonamento sono descritte nella tabella seguente.  La capacità minima per livello di servizio prestazionale è definita come la stessa per tutte le mozioni di vendita Keystone .  Nella tabella è strutturata anche la capacità superiore alla capacità minima all'inizio dell'abbonamento, come servizio aggiuntivo all'abbonamento o dopo la riassegnazione durante l'abbonamento.
+
+|===
+
+
+| Capacità | Estremo | Premio | Prestazione | Standard | Valore 
+
+
+ a| 
+Capacità minima [in TiB]
+3+| 25 2+| 100 
+
+
+ a| 
+Capacità incrementale (e in multipli) consentita all'inizio dell'abbonamento [in TiB]
+3+| 25 2+| 25 
+
+
+ a| 
+Capacità incrementale (e in multipli) consentita come componente aggiuntivo durante l'abbonamento [in TiB]
+3+| 25 2+| 25 
+|===
+
+
+== Requisiti minimi di capacità per l'archiviazione degli oggetti
+
+Nella tabella seguente puoi vedere i requisiti minimi di capacità per l'archiviazione degli oggetti:
+
+|===
+
+
+| Capacità | Livelli dei dati | Oggetto | Cloud Volumes ONTAP | Servizio di backup su cloud 
+
+
+ a| 
+Capacità minima [in TiB]
+ a| 
+Non applicabile
+ a| 
+500
+ a| 
+4
+ a| 
+4
+
+
+
+ a| 
+Capacità incrementale (e in multipli) consentita all'inizio dell'abbonamento [in TiB]
+ a| 
+Non applicabile
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+
+
+ a| 
+Capacità incrementale (e in multipli) consentita come componente aggiuntivo durante l'abbonamento [in TiB]
+ a| 
+Non applicabile
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+|===
+
+
+== Regolazioni di capacità
+
+Per saperne di più sulle regolazioni della capacità:
+
+* La capacità può essere aggiunta in qualsiasi momento durante il periodo contrattuale, ad eccezione degli ultimi 90 giorni, con incrementi per livello di servizio prestazionale, come descritto nelle tabelle della sezione precedente.  L'aggiunta di capacità o servizi è consentita entro gli ultimi 90 giorni della durata del contratto, a condizione che vi sia il consenso al rinnovo del servizio.  Qualsiasi aggiunta di capacità, nuovo servizio on-premise o cloud può coincidere con la durata esistente.  La fattura che ti verrà inviata dopo l'attivazione dei nuovi servizi rifletterà la fatturazione rivista.  La capacità impegnata dei servizi cloud non può essere ridotta in nessun momento durante il periodo di validità dell'abbonamento.  Nel frattempo, la capacità impegnata e la spesa impegnata per i servizi in sede durante la durata del contratto possono essere ridotte in base a determinati criteri, come definito nella sezione seguente _Riduzione della capacità_.
+* In base all'accordo Keystone , in ogni sito è disponibile una capacità di burst.  Solitamente è superiore del 20% alla capacità impegnata per un livello di servizio prestazionale.  Ogni utilizzo eccessivo verrà fatturato solo per quel periodo di fatturazione.  Se hai bisogno di una potenza di burst aggiuntiva superiore alla capacità concordata, contatta l'assistenza.
+* La capacità impegnata può essere modificata durante il periodo contrattuale solo in determinate condizioni, come descritto nella sezione seguente _Riduzione della capacità_.
+* È consentito aumentare la capacità o passare a un livello di servizio con prestazioni più elevate durante il periodo di abbonamento.  Tuttavia, non è consentito passare da un livello di servizio con prestazioni più elevate a uno con prestazioni più basse.
+* Qualsiasi richiesta di modifica effettuata negli ultimi 90 giorni di validità del servizio richiede il rinnovo del servizio per almeno un anno.
+
+
+
+
+=== Riduzione della capacità
+
+La riduzione della capacità (annuale) è applicabile al modello di pagamento _Annuale anticipato_ e solo alle distribuzioni in sede.  Non è disponibile per i servizi cloud o i servizi cloud ibridi.  Fornisce una disposizione per la capacità in sede, che può essere ridotta fino al 25% per livello di servizio per abbonamento.  Questa riduzione è consentita una volta all'anno e avrà effetto all'inizio del successivo periodo di fatturazione annuale.  Per sfruttare la riduzione della capacità, i pagamenti annuali basati sui servizi in sede devono essere >=$ 200.000 in qualsiasi momento durante il periodo.  Poiché è supportato solo per le distribuzioni on-premise, questo modello di fatturazione non prevede la riallocazione della spesa dai servizi on-premise a quelli cloud.  Un esempio di riduzione della capacità annuale è illustrato nell'immagine seguente.
+
+image:reallocation.png["logica di riallocazione spiegata"]
+
+
+
+=== Riallocazione trimestrale della spesa
+
+Keystone STaaS ti offre la possibilità di riallocare la spesa per i servizi on-premise alla spesa Cloud Volumes ONTAP .
+
+Requisiti e condizioni a livello di abbonamento:
+
+* Si applica solo al modello di fatturazione mensile posticipata.
+* Si applica solo agli abbonamenti con impegni di durata pari a 1, 2 o 3 anni.
+* La capacità per i servizi Cloud Volumes ONTAP e Cloud Backup deve essere acquistata tramite Keystone.
+* Fino al 25% degli attuali pagamenti mensili basati sui servizi on-premise può essere utilizzato per la riallocazione ai servizi cloud.
+* Le richieste di riassegnazione diventano effettive solo dopo 90 giorni dalla precedente data di attivazione della riassegnazione.
+* Non è possibile effettuare la riallocazione dai servizi cloud ai servizi on-premise.
+* Una richiesta di riassegnazione deve essere presentata formalmente dal cliente o dal partner a Keystone Success Manager (KSM) almeno una settimana prima del successivo ciclo di fatturazione.
+* Le nuove richieste entrano in vigore solo a partire dal ciclo di fatturazione successivo.
+
+
+Puoi destinare una parte delle tue spese ai livelli di servizio di archiviazione di file, blocchi o oggetti sottoscritti ai servizi di archiviazione cloud ibrida.  Fino al 25% del valore contrattuale annuale (ACV) può essere riassegnato trimestralmente ai servizi Cloud Volumes ONTAP Primary e Cloud Volumes ONTAP Secondary:
+
+image:reallocation.png["logica di riallocazione spiegata"]
+
+Questa tabella fornisce una serie di valori campione per dimostrare come funziona la riallocazione delle spese.  In questo esempio, `$5000` della spesa mensile viene riassegnata al servizio di archiviazione cloud ibrido.
+
+|===
+
+
+| *Prima dell'assegnazione* | *Capacità (TiB)* | *Spesa mensile designata* 
+
+
+| Estremo | 125 | 37.376 
+
+
+| *Dopo la riassegnazione* | *Capacità (TiB)* | *Spesa mensile designata* 
+
+
+| Estremo | 108 | 37.376 
+
+
+| Cloud Volumes ONTAP | 47 | 5.000 
+
+
+|  |  | 37.376 
+|===
+La riduzione è pari a (125-108) = 17 TiB della capacità assegnata al livello di servizio Extreme Performance.  In caso di riallocazione della spesa, lo storage cloud ibrido assegnato non è più di 17 TiB, ma di una capacità equivalente a quella che si può acquistare con 5.000 $.  In questo esempio, per 5000 $, è possibile ottenere 17 TiB di capacità di storage on-prem per il livello di servizio Extreme Performance e 47 TiB di capacità cloud ibrida per il livello di servizio Cloud Volumes ONTAP Performance.  Pertanto la riallocazione avviene in base alla spesa e non alla capacità.
+
+Contatta il tuo Keystone Success Manager (KSM) se desideri riallocare le spese dai servizi on-premise ai servizi cloud.

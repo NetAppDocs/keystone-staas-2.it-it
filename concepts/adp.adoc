@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/adp.html 
+keywords: data protection advanced 
+summary: 'Utilizza il servizio aggiuntivo di protezione dati avanzata per garantire un"efficace protezione dei dati dei carichi di lavoro mission-critical.' 
+---
+= Scopri di più sulla protezione avanzata dei dati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi abbonarti al servizio aggiuntivo di protezione dati avanzata con il tuo abbonamento Keystone STaaS.  Questo servizio aggiuntivo utilizza la tecnologia NetApp MetroCluster per garantire un'efficiente protezione dei dati dei carichi di lavoro mission-critical con un Recovery Point Objective (RPO) pari a 0.
+
+
+NOTE: I servizi standard Keystone STaaS per l'archiviazione di file e blocchi offrono servizi di protezione dei dati predefiniti utilizzando tecnologie NetApp , come SnapMirror, SnapVault e Snapshot.
+
+Per informazioni sul servizio standard e cloud, vederelink:../concepts/supported-storage-services.html["Servizi STaaS Keystone"] .
+
+Il servizio avanzato di protezione dei dati Keystone può eseguire il mirroring sincrono dei dati su un sito secondario.  In caso di disastro nel sito primario, il sito secondario può subentrare, senza alcuna perdita di dati.  Questa funzionalità sfrutta l'link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] configurazione tra due siti per abilitare la protezione dei dati.  È possibile utilizzare i servizi aggiuntivi di protezione dati avanzata solo per i servizi di archiviazione file e a blocchi.  Come parte di questo servizio aggiuntivo, il `Advanced Data-Protect` al tuo abbonamento viene assegnato il livello di servizio delle prestazioni.
+
+Per informazioni su come visualizzare il consumo in una configurazione MetroCluster , vederelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Grafici di riferimento per la protezione avanzata dei dati"] .
+
+I costi aggiuntivi si applicano a tutte le capacità del tuo abbonamento, inclusi i dati sorgente, le copie speculari e i dati non speculari.
+
+Notare quanto segue:
+
+* Il servizio utilizza il 100% della capacità impegnata sullo storage associato come capacità impegnata.
+* Le tariffe si applicano sia ai siti primari che a quelli secondari e coprono sia i cluster di origine che quelli di destinazione.
+* I costi si applicano solo ai servizi di archiviazione file e a blocchi.
+
+
+Sono supportati i seguenti scenari MetroCluster :
+
+image:mcc-1.png["Configurazioni MetroCluster supportate da Keystone"]

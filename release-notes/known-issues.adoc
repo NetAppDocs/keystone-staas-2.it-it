@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: I problemi noti identificano i problemi che potrebbero impedirti di utilizzare in modo efficace i servizi di abbonamento Keystone . 
+---
+= Problemi noti in Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+I problemi noti identificano i problemi che potrebbero impedirti di utilizzare in modo efficace i servizi di abbonamento Keystone .
+
+Sono stati segnalati i seguenti problemi noti in NetApp Keystone STaaS:
+
+[cols="3*"]
+|===
+| Problema noto | Descrizione | Soluzione alternativa 
+
+
+ a| 
+Fattura errata a causa di dati non corrispondenti
+ a| 
+Una mancata corrispondenza nei dati di consumo per gli abbonamenti AutoSupport comporta la generazione di fatture errate, causando imprecisioni nella fatturazione.
+ a| 
+Nessuno
+
+
+
+ a| 
+Visualizzazione errata del tipo di policy QoS
+ a| 
+Nella scheda *Dettagli volume*, la colonna *Tipo di criterio QoS* visualizza _QoS_ quando non è applicato alcun criterio QoS, mentre la colonna Conforme visualizza _Non impostato_, causando un'incoerenza nello stato del criterio QoS visualizzato.
+ a| 
+Nessuno
+
+
+
+ a| 
+Dettagli sul volume non disponibili per gli abbonamenti principali e collegati
+ a| 
+La scheda *Riepilogo volumi* mostra zero per il numero totale di volumi, lo stato di conformità QoS, il conteggio dei volumi protetti e la capacità totale consumata per gli abbonamenti primari e secondari collegati.
+ a| 
+Nessuno
+
+|===

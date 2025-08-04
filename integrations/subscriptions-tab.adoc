@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+summary: Per saperne di più sui tuoi abbonamenti Keystone , puoi visualizzare un elenco di tutti i tuoi abbonamenti dalla scheda Abbonamenti. 
+---
+= Visualizza i dettagli sui tuoi abbonamenti Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi visualizzare un elenco di tutti i tuoi abbonamenti dalla scheda *Abbonamenti* sia in BlueXP che in Digital Advisor.  Questa scheda fornisce informazioni di facile comprensione basate sullo stato e sull'utilizzo dell'abbonamento, aiutandoti a rimanere informato e ad agire quando necessario.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+La scheda *Abbonamenti* in BlueXP è divisa in due sezioni: *Abbonamenti* e *Livelli di servizio delle prestazioni*.  Ogni sezione offre approfondimenti specifici per aiutarti a gestire e monitorare i tuoi abbonamenti Keystone .  Per visualizzare informazioni dettagliate sui tuoi abbonamenti, segui questi passaggi:
+
+.Passi
+. Dal menu di navigazione a sinistra BlueXP , vai a *Archiviazione > Keystone > Abbonamenti*.
++
+image:bxp-subscription-list-1.png["visualizza i dettagli della scheda abbonamento"]
+
++
+Vengono visualizzate le metriche chiave, quali lo stato della capacità, lo stato di scadenza dell'abbonamento e la versione Keystone per tutti gli abbonamenti.  Per saperne di più, fare riferimento alink:../integrations/keystone-bluexp.html["Dashboard Keystone in BlueXP"] .
+
++
+Nella tabella è possibile visualizzare i seguenti dettagli:
+
++
+** *Numero di abbonamento*: il numero di abbonamento Keystone assegnato da NetApp.
+** *ID di tracciamento*: ID di tracciamento assegnato al momento dell'attivazione dell'abbonamento.  Si tratta di un ID univoco per ogni abbonamento e sito, utilizzato per tracciare l'abbonamento.
+** *Nome del cliente*: il nome del cliente associato all'abbonamento Keystone .
+** *Abbonamenti collegati*: se hai abbonamenti secondari collegati al tuo abbonamento principale, questa colonna elenca i numeri degli abbonamenti collegati per l'abbonamento principale.  Questo numero di abbonamento può essere quello del tuo abbonamento primario o secondario (collegato).
+** * Versione Keystone *: la versione del servizio Keystone utilizzata per l'abbonamento.  Le regole del piano tariffario per i livelli di servizio delle prestazioni possono variare a seconda delle versioni di abbonamento.  Per saperne di più sulla versione v1, fare riferimento a https://docs.netapp.com/us-en/keystone/index.html["Servizi di abbonamento Keystone | Documentazione della versione 1"^] .
+** *Periodo di fatturazione*: il periodo di fatturazione dell'abbonamento.
+** *Livelli di servizio prestazionali*: numero di piani tariffari associati all'abbonamento, ciascuno dei quali corrisponde a uno specifico livello di servizio prestazionale e a una capacità impegnata.
+** *Capacità massima*: la capacità massima consumata nell'ambito dell'abbonamento.
+** *Giorni alla scadenza dell'abbonamento*: numero di giorni rimanenti fino alla scadenza dell'abbonamento.
++
+
+TIP: È possibile personalizzare le colonne visualizzate nella tabella utilizzando il selettore di colonnaimage:column-selector.png["icona di selezione della colonna"] icona.  Per determinati campi e colonne, potrebbero essere visualizzate icone informative o di avviso e descrizioni comandi che forniscono informazioni aggiuntive sui dati.
+
+
+
+. È possibile selezionare la sotto-scheda *Livelli di servizio delle prestazioni* per visualizzare i livelli di servizio delle prestazioni per tutti gli abbonamenti.
++
+image:bxp-performance-levels.png["visualizza i livelli di servizio delle prestazioni su tutti gli abbonamenti"]
+
++
+** *Livelli di servizio delle prestazioni tra gli abbonamenti*: visualizza il numero di livelli di servizio delle prestazioni tra gli abbonamenti.
+** *Coerenza del provisioning tra gli abbonamenti*: mostra i conteggi dei livelli di servizio con prestazioni in eccesso e in difetto.
++
+È possibile visualizzare l'elenco dei livelli di servizio delle prestazioni, inclusi dettagli chiave quali il nome del cliente, il numero di abbonamento, il tipo di livello di servizio delle prestazioni, il numero totale di volumi e il loro stato di conformità QoS.  La tabella mostra anche il conteggio dei volumi protetti, la capacità totale impegnata, consumata, fornita, disponibile (con e senza burst) e la capacità burst accumulata.
+
+
+
+
+
+--
+.Digital Advisor
+--
+Per visualizzare i tuoi abbonamenti in Digital Advisor, segui questi passaggi:
+
+.Passi
+. Dal riquadro di navigazione sinistro Digital Advisor , vai a *Generale > Abbonamenti Keystone > Abbonamenti*.
++
+Qui puoi visualizzare tutti i tuoi abbonamenti, con informazioni dettagliate per ciascuno.
+
++
+image:all-subs-4.png["un'immagine della scheda Abbonamenti"]
+
++
+Per determinati campi e colonne, potrebbero essere visualizzate icone informative o di avviso e descrizioni comandi che forniscono informazioni aggiuntive sui dati.
+
++
+** *Numero di abbonamento*: il numero di abbonamento Keystone assegnato da NetApp.
+** *Abbonamenti collegati*: questa colonna è facoltativa.  Se hai abbonamenti secondari collegati al tuo abbonamento principale, questa colonna elenca i numeri degli abbonamenti collegati per l'abbonamento principale.  Questo numero di abbonamento può essere quello del tuo abbonamento primario o secondario (collegato).
+** *ID di tracciamento*: ID di tracciamento assegnato al momento dell'attivazione dell'abbonamento.  Si tratta di un ID univoco per ogni abbonamento e sito.
++
+
+TIP: Se hai sottoscritto un abbonamento al servizio aggiuntivo di protezione dati avanzata, puoi fare clic sulla descrizione comandi accanto al numero di abbonamento per visualizzare l'ID di tracciamento dell'abbonamento del partner in una configurazione MetroCluster .  Per visualizzare il consumo dettagliato per abbonamento partner in una configurazione MetroCluster , vederelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Grafici di riferimento per la protezione avanzata dei dati"] .
+
+** *Tipo di utilizzo*: Potresti esserti abbonato a più versioni Keystone .  Le regole del piano tariffario per i livelli di servizio delle prestazioni possono variare a seconda delle versioni di abbonamento.  Osservando il valore in questa colonna, è possibile sapere se il tipo di utilizzo viene fatturato in base all'utilizzo previsto, fisico o logico.  Per saperne di più sulla versione 1, fare riferimento a https://docs.netapp.com/us-en/keystone/index.html["Servizi di abbonamento Keystone | Documentazione della versione 1"^] .
+** *Periodo di fatturazione*: il periodo di fatturazione dell'abbonamento.
+** *Data di inizio*: la data di inizio dell'abbonamento.
+** *Data di fine*: la data di fine dell'abbonamento.  Se hai un abbonamento con fatturazione mensile che si rinnova automaticamente ogni mese, vedi `Month-on-month` invece della data di fine.  In base a questa data, potresti visualizzare notifiche per gli abbonamenti che stanno per scadere o a cui sono associate politiche di rinnovo automatico.
+** *Stato di utilizzo*: visualizza l'indicatore di utilizzo per indicare se il consumo rientra o supera il limite dell'abbonamento.  È possibile ordinare l'elenco in base a questa colonna se si desidera visualizzare i record di consumo più elevati.
+** image:subs-dtls-icon.png["icona"]: Facendo clic su questa icona per un abbonamento si apre la scheda *Consumo attuale* con i dettagli di utilizzo di quell'abbonamento.
+** image:aiq-ks-time-icon.png["icona"]: Facendo clic su questa icona si apre la scheda *Andamento dei consumi*, dove è possibile visualizzare i dati storici di utilizzo per ciascun livello di servizio di prestazioni incluso in questo abbonamento.
++
+È possibile fare riferimento agli indicatori di utilizzo per verificare lo stato di utilizzo di ciascun abbonamento:
+
++
+image:icon-grey.png["icona del punto grigio"]*Nessun consumo*: non è stato registrato alcun utilizzo della capacità rispetto alla capacità impegnata del livello di servizio delle prestazioni. image:icon-green.png["icona del punto verde"] *Normale*: Il consumo è normale. image:icon-amber.png["icona punto ambra"] *Alto*: Consumo massimo, ovvero l'utilizzo sta per raggiungere il 100% o più della capacità impegnata. image:icon-red.png["icona del punto rosso"] *Burst*: Il consumo rientra nel limite di burst.  Il consumo burst è il consumo che supera il 100% della capacità impegnata di un livello di servizio prestazionale ed è compreso nel limite di utilizzo burst concordato. image:icon-purple.png["icona del punto viola"] *Sopra il limite di burst*: indica un consumo superiore al limite di burst concordato.
+
+
+
+
+
+--
+====
+*Informazioni correlate*
+
+* link:../integrations/dashboard-overview.html["Comprendere la dashboard Keystone"]
+* link:../integrations/current-usage-tab.html["Visualizza i dettagli dei tuoi consumi attuali"]
+* link:../integrations/consumption-tab.html["Visualizza le tendenze dei consumi"]
+* link:../integrations/subscription-timeline.html["Visualizza la cronologia del tuo abbonamento"]
+* link:../integrations/assets-tab.html["Visualizza le risorse del tuo abbonamento Keystone"]
+* link:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"]
+* link:../integrations/volumes-objects-tab.html["Visualizza i dettagli dei volumi e degli oggetti"]
+

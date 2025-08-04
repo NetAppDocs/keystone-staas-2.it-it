@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: United States Protected Support è un servizio aggiuntivo che fornisce la fornitura e il supporto di servizi Keystone in corso da parte di cittadini statunitensi sul suolo statunitense. 
+---
+= Scopri di più su USPS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+United States Protected Support (USPS) è un'offerta aggiuntiva per gli abbonamenti NetApp Keystone .  Ti dà diritto a ricevere la consegna e il supporto dei servizi Keystone in corso da parte di cittadini statunitensi sul suolo statunitense.
+
+Leggere le sezioni seguenti per comprendere quali elementi dei propri abbonamenti sono vincolati da questo servizio aggiuntivo e sono forniti secondo i termini del Contratto NetApp Keystone :disclaimer1[I servizi e le offerte qui descritti sono soggetti, limitati e regolati da un Contratto Keystone completamente eseguito.]
+
+
+
+== Monitoraggio USPS NetApp
+
+Il team di supporto NetApp USPS Keystone monitora lo stato dei tuoi prodotti e dei servizi sottoscritti, fornisce supporto remoto e collabora con il tuo Keystone Success Manager.  Tutto il personale che monitora i prodotti associati agli ordini di abbonamento Keystone pertinenti è costituito da cittadini statunitensi che operano sul suolo statunitense.
+
+
+
+== Responsabile del successo Keystone
+
+Il Keystone Success Manager (KSM) è un cittadino statunitense che opera sul suolo statunitense.  Le loro responsabilità sono specificate nel contratto NetApp Keystone .
+
+
+
+== Attività di distribuzione
+
+Laddove disponibili, le attività di installazione e distribuzione in loco e da remoto vengono svolte da cittadini statunitensi su suolo statunitense. nota a piè di pagina: esclusione di responsabilità[La disponibilità di personale idoneo per le attività in loco dipende dalla posizione geografica in cui vengono distribuiti i sistemi Keystone .]
+
+
+
+== Supporto
+
+Laddove disponibili, le necessarie attività di risoluzione dei problemi e di supporto in loco vengono svolte da cittadini statunitensi sul suolo statunitense. footnote:disclaimer[]

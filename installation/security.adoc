@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: installation/security.html 
+keywords: VMware, security, hardening, Keystone Collector 
+summary: Keystone Collector include funzionalità di sicurezza che monitorano le prestazioni e le metriche di utilizzo dei sistemi Keystone ed è configurato per utilizzare configurazioni con protezione rafforzata. 
+---
+= Sicurezza di Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone Collector include funzionalità di sicurezza che monitorano le prestazioni e le metriche di utilizzo dei sistemi Keystone , senza mettere a rischio la sicurezza dei dati dei clienti.
+
+Il funzionamento di Keystone Collector si basa sui seguenti principi di sicurezza:
+
+* *Privacy by design*: Keystone Collector raccoglie dati minimi per eseguire la misurazione dell'utilizzo e il monitoraggio delle prestazioni. Per ulteriori informazioni, consultare link:data-collection.html["Dati raccolti per la fatturazione"^] .  ILlink:configuration.html#limit-collection-of-private-data["Rimuovi dati privati"] L'opzione è abilitata per impostazione predefinita e maschera e protegge le informazioni sensibili.
+* *Accesso con privilegi minimi*: Keystone Collector richiede autorizzazioni minime per monitorare i sistemi di archiviazione, il che riduce al minimo i rischi per la sicurezza e impedisce qualsiasi modifica indesiderata ai dati.  Questo approccio è in linea con il principio del privilegio minimo, migliorando la sicurezza complessiva degli ambienti monitorati.
+* *Framework di sviluppo software sicuro*: Keystone utilizza un framework di sviluppo software sicuro durante l'intero ciclo di sviluppo, che mitiga i rischi, riduce le vulnerabilità e protegge il sistema da potenziali minacce.
+
+
+
+
+== Rafforzamento della sicurezza
+
+Per impostazione predefinita, Keystone Collector è configurato per utilizzare configurazioni con protezione rafforzata.  Di seguito sono riportate le configurazioni di sicurezza consigliate:
+
+* Il sistema operativo della macchina virtuale Keystone Collector:
++
+** Conforme allo standard CIS Debian Linux 12 Benchmark.  Apportare modifiche alla configurazione del sistema operativo al di fuori del software di gestione Keystone Collector potrebbe ridurre la sicurezza del sistema. Per ulteriori informazioni, consultare link:https://learn.cisecurity.org/benchmarks["Guida CIS Benchmark"^] .
+** Riceve e installa automaticamente le patch di sicurezza verificate da Keystone Collector tramite la funzione di aggiornamento automatico.  La disattivazione di questa funzionalità potrebbe comportare la presenza di software vulnerabile e non aggiornato.
+** Autentica gli aggiornamenti ricevuti da Keystone Collector.  La disabilitazione della verifica del repository APT può comportare l'installazione automatica di patch non autorizzate, con conseguente potenziale introduzione di vulnerabilità.
+
+
+* Keystone Collector convalida automaticamente i certificati HTTPS per garantire la sicurezza della connessione.  La disattivazione di questa funzionalità potrebbe comportare l'impersonificazione di endpoint esterni e la perdita di dati di utilizzo.
+* Keystone Collector supportalink:configuration.html#trust-a-custom-root-ca["CA attendibile personalizzata"] certificazione.  Per impostazione predefinita, considera attendibili i certificati firmati da CA radice pubbliche riconosciute dalink:https://wiki.mozilla.org/CA["Programma di certificazione CA di Mozilla"^] .  Abilitando CA attendibili aggiuntive, Keystone Collector consente la convalida dei certificati HTTPS per le connessioni agli endpoint che presentano tali certificati.
+* Keystone Collector abilita per impostazione predefinita l'opzione *Rimuovi dati privati*, che maschera e protegge le informazioni sensibili. Per ulteriori informazioni, consultare link:configuration.html#limit-collection-of-private-data["Limitare la raccolta di dati privati"^] .  Disattivando questa opzione verranno comunicati dati aggiuntivi al sistema Keystone .  Ad esempio, può includere informazioni immesse dall'utente, come i nomi dei volumi, che potrebbero essere considerate informazioni sensibili.
+
+
+*Informazioni correlate*
+
+* link:installation-overview.html["Panoramica di Keystone Collector"]
+* link:vapp-prereqs.html["Requisiti dell'infrastruttura virtuale"]
+* link:configuration.html["Configura Keystone Collector"]
+

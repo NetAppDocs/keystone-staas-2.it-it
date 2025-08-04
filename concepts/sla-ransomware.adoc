@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-ransomware.html 
+keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
+summary: NetApp garantisce il recupero dei dati Snapshot dai volumi SnapLock Compliance in caso di attacco ransomware con il programma Ransomware Recovery Guarantee 
+---
+= Garanzia di recupero dal ransomware
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp garantisce il recupero dei dati Snapshot dai volumi SnapLock Compliance in caso di attacco ransomware con il programma Ransomware Recovery Guarantee.  Il servizio NetApp Ransomware Recovery Assurance è necessario per supportare il programma Ransomware Recovery Guarantee e deve essere acquistato separatamente dall'ordine Keystone associato.
+
+
+
+== Livelli di servizio
+
+Il servizio Ransomware Recovery Assurance è obbligatorio per tutto l'hardware che supporta l'abbonamento Keystone per la durata del periodo di abbonamento applicabile.
+
+
+
+== Crediti di servizio
+
+
+NOTE: SLA e garanzie sono disponibili su base nominativa.
+
+Se SnapLock Compliance viene implementato secondo le best practice e i servizi professionali NetApp lo configurano o lo convalidano al momento dell'acquisto del servizio Ransomware Recovery Assurance, NetApp emette i crediti di servizio se i dati protetti da SnapLock non sono recuperabili.  I criteri per questi crediti sono i seguenti:
+
+* I crediti di servizio possono essere applicati alle fatture future.  I crediti sono limitati al 10% del valore contrattuale impegnato (CCV) e vengono erogati in base al singolo abbonamento.
+* I crediti vengono erogati durante il periodo di abbonamento attivo dell'ordine Keystone in questione.
+* Per gli abbonamenti con fatturazione mensile, i crediti verranno suddivisi nei successivi 12 mesi e potranno essere utilizzati per tutte le fatture Keystone future fino alla fine del periodo di abbonamento.  Se l'abbonamento scade entro 12 mesi, è possibile rinnovarlo per continuare a utilizzare i crediti oppure i crediti possono essere applicati ad altre fatture NetApp .
+* Per gli abbonamenti annuali, i crediti verranno applicati alla successiva fattura Keystone , se disponibile.  Se non ci saranno fatture Keystone future, i crediti potranno essere applicati ad altre fatture NetApp .
+

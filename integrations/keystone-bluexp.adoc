@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-bluexp.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
+summary: In qualità di abbonato a NetApp Keystone STaaS, puoi ottenere una panoramica dei tuoi abbonamenti da NetApp BlueXP. 
+---
+= Dashboard Keystone in BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la scheda *Panoramica* per determinare rapidamente i carichi di lavoro a rischio, visualizzare la capacità e lo stato di scadenza degli abbonamenti, identificare gli avvisi non risolti e visualizzare gli abbonamenti con il più alto utilizzo della capacità.  Puoi anche visualizzare lo stato dei tuoi abbonamenti nelle diverse versioni di Keystone, evidenziando eventuali problemi che richiedono la tua attenzione.
+
+Per visualizzare la scheda *Panoramica*, dal menu di navigazione sinistro BlueXP , vai a *Archiviazione > Keystone > Panoramica*.
+
+image:bxp-dashboard-overview-1.png["uno screenshot della scheda Panoramica"]
+
+La scheda *Panoramica* offre le seguenti informazioni:
+
+* *Riepilogo*: visualizza il numero totale di abbonamenti, cluster ONTAP , nodi StorageGRID e nodi ONTAP .  Ogni categoria ha un pulsante *Visualizza* per navigare facilmente verso sezioni dettagliate nella scheda *Abbonamenti* o *Risorse*.
+* *In scadenza a breve*: numero di abbonamenti in scadenza entro 6 mesi.  Fare clic su *Visualizza* per visualizzare questi abbonamenti nella scheda *Abbonamenti*.
+* *Richieste aperte*: numero totale di richieste di servizio aperte.
+* *Utilizzo della capacità*: lo stato di consumo della capacità per gli abbonamenti che superano il burst, che utilizzano il burst e che sono sottoutilizzati.  Ogni categoria include un pulsante *Visualizza* per passare alla scheda *Abbonamenti* con i filtri pertinenti applicati.
+* *I 5 abbonamenti con il più alto utilizzo della capacità*: visualizza una tabella dei cinque abbonamenti Keystone con la più alta percentuale di utilizzo della capacità.  Puoi cliccare sul numero di abbonamento nella colonna *Abbonamento* per ottenere informazioni dettagliate.
+
+
+*Informazioni correlate*
+
+* link:../integrations/dashboard-overview.html["Scopri di più sulla dashboard Keystone"]
+* link:../integrations/dashboard-access.html["Inizia con la dashboard Keystone"]
+* link:..//integrations/keystone-aiq.html["Dashboard Keystone in Digital Advisor"]
+* link:../integrations/subscriptions-tab.html["Visualizza i dettagli del tuo abbonamento"]
+* link:../integrations/current-usage-tab.html["Visualizza i dettagli dei tuoi consumi attuali"]
+* link:../integrations/consumption-tab.html["Visualizza le tendenze dei consumi"]
+

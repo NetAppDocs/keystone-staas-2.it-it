@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: concepts/operational-models.html 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+summary: NetApp Keystone STaaS offre due modelli operativi per la fornitura dei servizi.  Prima di iniziare a utilizzare Keystone, dovresti comprendere queste opzioni. 
+---
+= Modelli operativi in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS offre due modelli operativi per l'erogazione dei servizi: modello gestito dal partner e modello gestito dal cliente.  Prima di iniziare a utilizzare Keystone, dovresti comprendere queste opzioni.
+
+* *Modello gestito dal partner*: questo modello offre due opzioni:
++
+** *Fornitore di servizi*: un fornitore di servizi gestisce i servizi per i propri clienti finali.  In qualità di contraente di NetApp, il fornitore di servizi gestisce un ambiente multi-tenant in cui ogni tenant, che è cliente del fornitore di servizi, ha il proprio abbonamento, fatturato dal fornitore di servizi.  L'amministratore del fornitore di servizi è responsabile dell'esecuzione di tutte le attività amministrative per gli inquilini.
+** *Rivenditore*: in qualità di rivenditore, un partner funge da ponte tra NetApp e il cliente.  Il partner vende i servizi Keystone al cliente finale e gestisce la fatturazione.  Mentre il partner si occupa della fatturazione, NetApp fornisce supporto diretto al cliente.  Il supporto Keystone interagisce con il cliente e gestisce tutte le attività amministrative per gli inquilini.
+
+
+* *Modello gestito dal cliente*: in qualità di cliente, puoi abbonarti ai servizi Keystone in base ai livelli di servizio prestazionale e di archiviazione selezionati.  NetApp definisce l'architettura e i prodotti e distribuisce Keystone presso la tua sede.  È necessario gestire l'infrastruttura tramite le risorse di storage e IT.  In base al contratto, puoi inoltrare richieste di assistenza che verranno gestite da NetApp o dal tuo fornitore di servizi.  Un amministratore della tua organizzazione può eseguire le attività amministrative presso la tua sede (ambiente).  Queste attività sono associate agli utenti nel tuo ambiente.
+
+
+
+
+== Ruoli e responsabilità durante il ciclo di vita del servizio
+
+* *Modello gestito dal partner*: la condivisione di ruoli e responsabilità dipende dall'accordo tra te e il fornitore di servizi o il partner.  Per informazioni, contattare il proprio fornitore di servizi.
+* *Modello gestito dal cliente*: la tabella seguente riassume il modello complessivo del ciclo di vita del servizio e i ruoli e le responsabilità ad esso associati in un ambiente gestito dal cliente.
+
+
+|===
+| Compito | NetApp | Cliente 
+
+
+ a| 
+Installazione e attività correlate
+
+* Installare
+* Configurare
+* Distribuire
+* A bordo
+
+| image:check.png["segno di spunta"] | Nessuno 
+
+
+ a| 
+Amministrazione e monitoraggio
+
+* Monitor
+* Rapporto
+* Svolgere compiti amministrativi
+* Attenzione
+
+| Nessuno | image:check.png["segno di spunta"] 
+
+
+ a| 
+Operazioni e ottimizzazione
+
+* Gestire la capacità
+* Gestire le prestazioni
+* Gestisci SLA
+
+| Nessuno | image:check.png["segno di spunta"] 
+
+
+ a| 
+Supporto
+
+* Supporto clienti
+* Riparazione guasti hardware
+* Supporto software
+* Aggiornamenti e patch
+
+| image:check.png["segno di spunta"] | Nessuno 
+|===
+Per maggiori informazioni sulla distribuzione, vederelink:../concepts/infra.html["Infrastruttura Keystone"] Elink:..//concepts/components.html["Componenti per la distribuzione"] .

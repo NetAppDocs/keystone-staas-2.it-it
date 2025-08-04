@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: NetApp offre funzionalità nuove e migliorate in ogni versione dei servizi Keystone STaaS. 
+---
+= Novità di Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri le ultime funzionalità e i miglioramenti dei servizi Keystone STaaS.
+
+
+
+== 05 agosto 2025
+
+
+
+=== Visualizza i dati di consumo a livello di istanza
+
+È possibile visualizzare i dati storici e di consumo correnti per ogni istanza del livello di servizio delle prestazioni tramite la dashboard Keystone in BlueXP.  Questa funzionalità è disponibile per livelli di servizio di prestazioni con più istanze, a condizione che si disponga di un abbonamento Keystone versione 3 (v3).  Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Visualizza il consumo dei tuoi abbonamenti Keystone"] .
+
+
+
+== 30 giugno 2025
+
+
+
+=== Rilascio Keystone versione 3 (v3).
+
+Ora puoi abbonarti a Keystone versione 3 (v3), l'ultima release dell'offerta NetApp Keystone STaaS.  Questa versione introduce diversi miglioramenti, tra cui livelli di servizio delle prestazioni semplificati, opzioni di capacità burst aggiuntive e frequenze di fatturazione flessibili.  Questi miglioramenti semplificano la gestione, l'ottimizzazione e il ridimensionamento delle soluzioni di storage.  Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Servizi Keystone STaaS per v3"] .
+
+
+
+== 19 giugno 2025
+
+
+
+=== Dashboard Keystone in BlueXP
+
+Ora puoi accedere alla dashboard Keystone direttamente da BlueXP.  Questa integrazione ti offre un unico posto in cui monitorare, gestire e tenere traccia di tutti i tuoi abbonamenti Keystone insieme agli altri servizi NetApp .
+
+Con la dashboard Keystone in BlueXP puoi:
+
+* Visualizza tutti i dettagli del tuo abbonamento, l'utilizzo della capacità e le risorse in un unico posto.
+* Gestisci facilmente gli abbonamenti e richiedi modifiche in base all'evoluzione delle tue esigenze.
+* Rimani aggiornato sulle ultime informazioni relative al tuo ambiente di archiviazione.
+
+
+Per iniziare, vai su *Archiviazione > Keystone* nel menu di navigazione a sinistra BlueXP .  Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Panoramica della dashboard Keystone"] .
+
+
+
+== 08 gennaio 2025
+
+
+
+=== Aggiunta di opzioni di visualizzazione dell'utilizzo dei dati accumulati quotidianamente
+
+Ora puoi visualizzare l'utilizzo giornaliero dei dati accumulati in formato grafico o tabella per un periodo di fatturazione mensile o trimestrale facendo clic sulla barra che mostra i dati fatturati.  Per saperne di più, fare riferimento alink:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Visualizza l'utilizzo giornaliero dei dati accumulati"] .
+
+
+
+== 12 dicembre 2024
+
+
+
+=== Colonna Logica utilizzata rinominata
+
+La colonna *Logico utilizzato* nella scheda *Dettagli volume* in *Volumi e oggetti* è ora rinominata * Keystone Logico utilizzato*.
+
+
+
+=== Scheda Risorse avanzate
+
+La scheda *Risorse* nella schermata *Abbonamenti Keystone * ora presenta due nuove sotto-schede: * ONTAP* e * StorageGRID*.  Queste sotto-schede offrono informazioni dettagliate a livello di cluster per ONTAP e informazioni a livello di griglia per StorageGRID in base ai tuoi abbonamenti.  Per saperne di più, fare riferimento alink:./integrations/assets-tab.html["Scheda Risorse"^] .
+
+
+
+=== Nuova opzione Nascondi/Mostra colonne
+
+La scheda *Dettagli volume* in *Volumi e oggetti* ora include l'opzione *Nascondi/Mostra colonne*.  Questa opzione consente di selezionare o deselezionare le colonne per personalizzare l'elenco tabulare dei volumi in base alle proprie preferenze.  Per saperne di più, fare riferimento alink:./integrations/volumes-objects-tab.html["Scheda Volumi e oggetti"^] .
+
+
+
+== 21 novembre 2024
+
+
+
+=== Burst di fattura maturato migliorato
+
+Ora puoi visualizzare i dati sull'utilizzo del burst maturato su base trimestrale tramite l'opzione *Burst maturato fatturato* se hai optato per un periodo di fatturazione trimestrale.  Per saperne di più, fare riferimento alink:./integrations/consumption-tab.html#view-accrued-burst["Visualizza l'incremento fatturato maturato"^] .
+
+
+
+=== Nuove colonne nella scheda Dettagli volumi
+
+Per migliorare la chiarezza nel calcolo dell'utilizzo logico, sono state aggiunte due nuove colonne alla scheda *Dettagli volume* all'interno della scheda *Volumi e oggetti*:
+
+* *AFS logico*: visualizza la capacità logica utilizzata dal file system attivo del volume.
+* *Snapshot fisico*: visualizza lo spazio fisico utilizzato dagli snapshot.
+
+
+Queste colonne forniscono maggiore chiarezza sulla colonna *Logico utilizzato*, che mostra la capacità logica combinata utilizzata dal file system attivo del volume e lo spazio fisico utilizzato dagli snapshot.
+
+
+
+== 11 novembre 2024
+
+
+
+=== Generazione di report migliorata
+
+Ora puoi generare un report consolidato per visualizzare i dettagli dei tuoi dati Keystone utilizzando la funzionalità Report in Digital Advisor.  Per saperne di più, fare riferimento alink:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Generare un report consolidato"^] .
+
+
+
+== 10 luglio 2024
+
+
+
+=== Modifiche all'etichetta
+
+L'etichetta *Utilizzo attuale* viene modificata in *Consumo attuale* e *Andamento capacità* viene modificato in *Andamento consumo*.
+
+
+
+=== Barra di ricerca per gli abbonamenti
+
+Il menu a discesa *Abbonamenti* in tutte le schede della schermata *Abbonamenti Keystone * ora include una barra di ricerca.  È possibile cercare abbonamenti specifici elencati nel menu a discesa *Abbonamenti*.
+
+
+
+== 27 giugno 2024
+
+
+
+=== Visualizzazione coerente dell'abbonamento
+
+La schermata *Abbonamenti Keystone * viene aggiornata per visualizzare il numero di abbonamento selezionato in tutte le schede.
+
+* Quando una qualsiasi scheda nella schermata *Abbonamenti Keystone * viene aggiornata, la schermata passa automaticamente alla scheda *Abbonamenti* e reimposta tutte le schede sul primo abbonamento elencato nel menu a discesa *Abbonamento*.
+* Se l'abbonamento selezionato non è abbonato alle metriche delle prestazioni, la scheda *Prestazioni* visualizzerà il primo abbonamento elencato nel menu a discesa *Abbonamento* durante la navigazione.
+
+
+
+
+== 29 maggio 2024
+
+
+
+=== Indicatore Burst migliorato
+
+L'indicatore *Burst* nell'indice del grafico di utilizzo è stato migliorato per visualizzare il valore percentuale del limite di burst.  Questo valore cambia a seconda del limite di burst concordato per un abbonamento.  È anche possibile visualizzare il valore del limite di burst nella scheda *Abbonamenti* passando il mouse sull'indicatore *Utilizzo burst* nella colonna *Stato di utilizzo*.
+
+
+
+=== Aggiunta di livelli di servizio
+
+I livelli di servizio *CVO Primary* e *CVO Secondary* sono inclusi per supportare Cloud Volumes ONTAP per gli abbonamenti che hanno piani tariffari con capacità impegnata pari a zero o quelli configurati con un cluster metro.
+
+* È possibile visualizzare il grafico dell'utilizzo della capacità per questi livelli di servizio dalla vecchia dashboard del widget *Abbonamenti Keystone * e dalla scheda *Tendenza capacità*, nonché informazioni dettagliate sull'utilizzo dalla scheda *Utilizzo corrente*.
+* Nella scheda *Abbonamenti*, questi livelli di servizio vengono visualizzati come `CVO (v2)` nella colonna *Tipo di utilizzo*, consentendo l'identificazione della fatturazione in base a questi livelli di servizio.
+
+
+
+
+=== Funzione di zoom per scatti a breve termine
+
+La scheda *Tendenza capacità* ora include una funzione di ingrandimento per visualizzare i dettagli dei picchi a breve termine nei grafici di utilizzo. Per ulteriori informazioni, consultare link:./integrations/consumption-tab.html["Scheda Andamento della capacità"^] .
+
+
+
+=== Visualizzazione migliorata degli abbonamenti
+
+La visualizzazione predefinita degli abbonamenti è stata migliorata per ordinare in base all'ID di tracciamento.  Gli abbonamenti nella scheda *Abbonamenti*, inclusi quelli nel menu a discesa *Abbonamento* e nei report CSV, verranno ora visualizzati in base alla sequenza alfabetica degli ID di monitoraggio, seguendo l'ordine a, A, b, B e così via.
+
+
+
+=== Visualizzazione migliorata dei burst accumulati
+
+La descrizione comandi che appare passando il mouse sopra il grafico a barre dell'utilizzo della capacità nella scheda *Tendenza capacità* ora mostra il tipo di burst accumulato in base alla capacità impegnata.  Distingue tra burst maturato provvisorio e fatturato, mostrando *Consumo maturato provvisorio* e *Consumo maturato fatturato* per gli abbonamenti con piani tariffari a capacità impegnata pari a zero, e *Burst maturato provvisorio* e *Burst maturato fatturato* per quelli con capacità impegnata diversa da zero.
+
+
+
+== 09 maggio 2024
+
+
+
+=== Nuove colonne nei report CSV
+
+I report CSV della scheda *Tendenza capacità* ora includono le colonne *Numero abbonamento* e *Nome account* per maggiori dettagli.
+
+
+
+=== Colonna Tipo di utilizzo avanzato
+
+La colonna *Tipo di utilizzo* nella scheda *Sottoscrizioni* è stata migliorata per visualizzare gli utilizzi logici e fisici come valori separati da virgole per le sottoscrizioni che coprono i livelli di servizio sia per file che per oggetti.
+
+
+
+=== Accedi ai dettagli di archiviazione degli oggetti dalla scheda Dettagli volume
+
+La scheda *Dettagli volume* all'interno della scheda *Volumi e oggetti* ora fornisce dettagli sull'archiviazione degli oggetti insieme alle informazioni sui volumi per gli abbonamenti che includono livelli di servizio sia per file che per oggetti.  È possibile fare clic sul pulsante *Dettagli archiviazione oggetti* nella scheda *Dettagli volume* per visualizzare i dettagli.
+
+
+
+== 28 marzo 2024
+
+
+
+=== Miglioramento della visualizzazione della conformità dei criteri QoS nella scheda Dettagli volume
+
+La scheda *Dettagli volume* all'interno della scheda *Volumi e oggetti* ora fornisce una migliore visibilità sulla conformità ai criteri di qualità del servizio (QoS).  La colonna precedentemente nota come *AQoS* è stata rinominata *Conforme*, che indica se la policy QoS è conforme.  Inoltre, è stata aggiunta una nuova colonna *Tipo di policy QoS*, che specifica se la policy è fissa o adattiva.  Se nessuna delle due condizioni è valida, la colonna visualizza _Non disponibile_. Per ulteriori informazioni, consultare link:./integrations/volumes-objects-tab.html["Scheda Volumi e oggetti"^] .
+
+
+
+=== Nuova colonna e visualizzazione semplificata dell'abbonamento nella scheda Riepilogo volume
+
+* La scheda *Riepilogo volume* all'interno della scheda *Volumi e oggetti* ora include una nuova colonna denominata *Protetto*.  Questa colonna fornisce un conteggio dei volumi protetti associati ai livelli di servizio sottoscritti.  Facendo clic sul numero di volumi protetti, si accede alla scheda *Dettagli volume*, in cui è possibile visualizzare un elenco filtrato dei volumi protetti.
+* La scheda *Riepilogo volume* è stata aggiornata per visualizzare solo gli abbonamenti base, esclusi i servizi aggiuntivi. Per ulteriori informazioni, consultare link:./integrations/volumes-objects-tab.html["Scheda Volumi e oggetti"^] .
+
+
+
+
+=== Modifica della visualizzazione dei dettagli del burst accumulato nella scheda Andamento della capacità
+
+La descrizione comandi che appare passando il mouse sopra il grafico a barre dell'utilizzo della capacità nella scheda *Tendenza capacità* mostrerà i dettagli dei picchi accumulati per il mese corrente.  I dettagli per i mesi precedenti non saranno disponibili.
+
+
+
+=== Accesso migliorato per visualizzare i dati storici per gli abbonamenti Keystone
+
+Ora puoi visualizzare i dati storici se un abbonamento Keystone viene modificato o rinnovato.  È possibile impostare la data di inizio di un abbonamento su una data precedente per visualizzare:
+
+* Dati sui consumi e sull'utilizzo a raffica accumulato dalla scheda *Tendenze capacità*.
+* Metriche delle prestazioni dei volumi ONTAP dalla scheda *Prestazioni*.
+
+
+I dati vengono visualizzati in base alla data di inizio selezionata per l'abbonamento.
+
+
+
+== 29 febbraio 2024
+
+
+
+=== Aggiunta della scheda Risorse
+
+La schermata *Abbonamenti Keystone * ora include la scheda *Risorse*.  Questa nuova scheda fornisce informazioni a livello di cluster in base ai tuoi abbonamenti. Per ulteriori informazioni, consultare link:./integrations/assets-tab.html["Scheda Risorse"^] .
+
+
+
+=== Miglioramenti alla scheda Volumi e oggetti
+
+Per fornire maggiore chiarezza sui volumi del sistema ONTAP , sono stati aggiunti due nuovi pulsanti, *Riepilogo volume* e *Dettagli volume*, alla scheda *Volumi*.  La scheda *Riepilogo volume* fornisce un conteggio complessivo dei volumi associati ai livelli di servizio sottoscritti, inclusi il loro stato di conformità AQoS e le informazioni sulla capacità.  La scheda *Dettagli volume* elenca tutti i volumi e le relative specifiche. Per ulteriori informazioni, consultare link:./integrations/volumes-objects-tab.html["Scheda Volumi e oggetti"^] .
+
+
+
+=== Esperienza di ricerca migliorata su Digital Advisor
+
+I parametri di ricerca nella schermata * Digital Advisor* ora includono i numeri di abbonamento Keystone e le liste di controllo create per gli abbonamenti Keystone .  È possibile immettere i primi tre caratteri del numero di un abbonamento o del nome della watchlist. Per ulteriori informazioni, consultare link:./integrations/keystone-aiq.html["Visualizza la dashboard Keystone su Active IQ Digital Advisor"^] .
+
+
+
+=== Visualizza la marca temporale dei dati di consumo
+
+È possibile visualizzare la marca temporale dei dati di consumo (in UTC) nella vecchia dashboard del widget * Keystone Subscriptions*.
+
+
+
+== 13 febbraio 2024
+
+
+
+=== Possibilità di visualizzare gli abbonamenti collegati a un abbonamento principale
+
+Alcuni dei tuoi abbonamenti principali possono avere abbonamenti secondari collegati.  In tal caso, il numero di abbonamento principale continuerà a essere visualizzato nella colonna *Numero di abbonamento*, mentre i numeri di abbonamento collegati saranno elencati in una nuova colonna *Abbonamenti collegati* nella scheda *Abbonamenti*.  La colonna *Abbonamenti collegati* diventa disponibile solo se hai degli abbonamenti collegati e puoi visualizzare messaggi informativi che ti informano su di essi.
+
+
+
+== 11 gennaio 2024
+
+
+
+=== Dati fatturati restituiti per burst maturato
+
+Le etichette per *Accrued Burst* sono ora modificate in *Invoiced Accrued Burst* nella scheda *Capacity Trend*.  Selezionando questa opzione è possibile visualizzare i grafici mensili dei dati burst fatturati e maturati. Per ulteriori informazioni, consultare link:./integrations/consumption-tab.html#view-accrued-burst["Visualizza l'incremento fatturato maturato"^] .
+
+
+
+=== Dettagli sui consumi maturati per piani tariffari specifici
+
+Se hai un abbonamento con piani tariffari con capacità impegnata pari a _zero_, puoi visualizzare i dettagli del consumo accumulato nella scheda *Andamento capacità*.  Selezionando l'opzione *Consumo maturato fatturato*, è possibile visualizzare i grafici mensili dei dati di consumo maturato fatturato.
+
+
+
+== 15 dicembre 2023
+
+
+
+=== Possibilità di ricerca tramite liste di controllo
+
+Il supporto per le watchlist in Digital Advisor è stato esteso per includere i sistemi Keystone .  Ora puoi visualizzare i dettagli degli abbonamenti di più clienti effettuando una ricerca tramite le watchlist.  Per ulteriori informazioni sull'uso delle liste di controllo in Keystone STaaS, vederelink:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Ricerca per liste di controllo Keystone"^] .
+
+
+
+=== Data convertita nel fuso orario UTC
+
+I dati restituiti nelle schede della schermata *Abbonamenti Keystone * di Digital Advisor vengono visualizzati in ora UTC (fuso orario del server).  Quando si inserisce una data per la query, questa viene automaticamente considerata in base all'ora UTC. Per ulteriori informazioni, consultare link:./integrations/keystone-aiq.html["Dashboard e reportistica dell'abbonamento Keystone"^] .

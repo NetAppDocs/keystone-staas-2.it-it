@@ -1,0 +1,365 @@
+---
+sidebar: sidebar 
+permalink: installation/data-collection.html 
+keywords: type of data collected by Keystone collector 
+summary: 'Keystone raccoglie informazioni sulla configurazione, sullo stato e sull"utilizzo per gli abbonamenti ONTAP e StorageGRID .  Può anche raccogliere dati sulle prestazioni ONTAP .' 
+---
+= Tipi di dati utente raccolti da Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone raccoglie informazioni sulla configurazione, sullo stato e sull'utilizzo dagli abbonamenti Keystone ONTAP e Keystone StorageGRID , nonché dati di telemetria dalla macchina virtuale (VM) che ospita Keystone Collector.  Può raccogliere dati sulle prestazioni solo per ONTAP , se questa opzione è abilitata in Keystone Collector.
+
+
+
+== Raccolta dati ONTAP
+
+.<strong>Dati di utilizzo raccolti per ONTAP: Scopri di più</strong>
+[%collapsible]
+====
+L'elenco seguente è un campione rappresentativo dei dati sul consumo di capacità raccolti per ONTAP:
+
+* Cluster
++
+** ClusterUUID
+** Nome del cluster
+** Numero di serie
+** Posizione (in base al valore immesso nel cluster ONTAP )
+** Contatto
+** Versione
+
+
+* Nodi
++
+** Numero di serie
+** Nome del nodo
+
+
+* Volumi
++
+** Nome aggregato
+** Nome del volume
+** VolumeInstanceUUID
+** Flag IsCloneVolume
+** Flag IsFlexGroupConstituent
+** Flag IsSpaceEnforcementLogical
+** Flag IsSpaceReportingLogical
+** Spazio logico utilizzato da Afs
+** PercentSnapshotSpace
+** PerformanceTierInactiveUserData
+** PerformanceTierInactiveUserDataPercent
+** Nome QoSAdaptivePolicyGroup
+** Nome QoSPolicyGroup
+** Misurare
+** Usato
+** FisicoUsato
+** Dimensioni utilizzate dalle istantanee
+** Tipo
+** VolumeStyleExtended
+** Nome del server virtuale
+** Flag IsVsRoot
+
+
+* VServer
++
+** NomeVserver
+** VserverUUID
+** Sottotipo
+
+
+* Aggregati di stoccaggio
++
+** Tipo di archiviazione
+** Nome aggregato
+** UUID aggregato
+
+
+* Archivi di oggetti aggregati
++
+** NomeArchivioOggetto
+** ObjectStoreUUID
+** Tipo di fornitore
+** Nome aggregato
+
+
+* Clona volumi
++
+** FlexClone
+** Misurare
+** Usato
+** Vserver
+** Tipo
+** ParentVolume
+** ParentVserver
+** IsConstituent
+** SplitEstimate
+** Stato
+** FlexCloneUsedPercent
+
+
+* LUN di archiviazione
++
+** UUID LUN
+** Nome LUN
+** Misurare
+** Usato
+** Flag IsReserved
+** Flag IsRequested
+** Nome unità logica
+** QoSPolicyUUID
+** Nome della politica QoSPolicy
+** VolumeUUID
+** NomeVolume
+** SVMUUID
+** Nome SVM
+
+
+* Volumi di archiviazione
++
+** VolumeInstanceUUID
+** NomeVolume
+** Nome SVM
+** SVMUUID
+** QoSPolicyUUID
+** Nome della politica QoSPolicy
+** CapacitàTierFootprint
+** Impronta di livello di prestazione
+** Impronta totale
+** Politica di suddivisione in livelli
+** Flag IsProtected
+** Flag IsDestination
+** Usato
+** FisicoUsato
+** CloneParentUUID
+** Spazio logico utilizzato da Afs
+
+
+* Gruppi di policy QoS
++
+** PolicyGroup
+** QoSPolicyUUID
+** Massima produttività
+** Portata minima
+** Massima capacità IOPS
+** Velocità massima in MBps
+** MinThroughputIOPS
+** Velocità minima di trasmissione MBps
+** Flag condiviso
+
+
+* Gruppi di policy QoS adattive ONTAP
++
+** Nome della politica QoSPolicy
+** QoSPolicyUUID
+** Picco IOPS
+** PeakIOPSAllocation
+** Minimo IOPS assoluto
+** IOPS previsti
+** Allocazione IOPS prevista
+** Dimensione del blocco
+
+
+* Impronte
++
+** Vserver
+** Volume
+** Impronta totale
+** VolumeBlocksFootprintBin0
+** VolumeBlocksFootprintBin1
+
+
+* Cluster MetroCluster
++
+** ClusterUUID
+** Nome del cluster
+** RemoteClusterUUID
+** NomeCluserRemoto
+** Stato di configurazione locale
+** Stato di configurazione remoto
+** Modalità
+
+
+* Metriche di osservabilità del collettore
++
+** Orario di raccolta
+** Interrogazione dell'endpoint API Active IQ Unified Manager
+** Tempo di risposta
+** Numero di record
+** IP dell'istanza AIQUMInstance
+** ID CollectorInstance
+
+
+
+
+====
+.<strong>Dati sulle prestazioni raccolti per ONTAP: Scopri di più</strong>
+[%collapsible]
+====
+L'elenco seguente è un campione rappresentativo dei dati sulle prestazioni raccolti per ONTAP:
+
+* Nome del cluster
+* UUID del cluster
+* ID oggetto
+* NomeVolume
+* UUID dell'istanza del volume
+* Vserver
+* VserverUUID
+* Nodo seriale
+* Versione ONTAP
+* Versione AIQUM
+* Aggregato
+* AggregateUUID
+* ResourceKey
+* Marca temporale
+* IOPSPerTb
+* Latenza
+* ReadLatency
+* Scrivi MBps
+* QoSMinThroughputLatency
+* Latenza QoSNBlade
+* UsedHeadRoom
+* CacheMissRatio
+* AltroLatenza
+* QoSAggregateLatency
+* IOPS
+* QoSNetworkLetency
+* AvailableOps
+* Latenza di scrittura
+* Latenza QoSCloud
+* QoSClusterInterconnectLatency
+* Altri MBps
+* Latenza QoSCop
+* Latenza QoSDBlade
+* Utilizzo
+* LeggiIOPS
+* MBps
+* Altri IOPS
+* QoSPolicyGroupLatency
+* Lettura MBps
+* QoSSyncSnapmirrorLatency
+* ScriviIOPS
+
+
+====
+.<strong>Elenco degli elementi rimossi limitando l'accesso ai dati privati: Scopri di più</strong>
+[%collapsible]
+====
+Quando l'opzione *Rimuovi dati privati* è abilitata su Keystone Collector, le seguenti informazioni sull'utilizzo vengono eliminate per ONTAP.  Questa opzione è abilitata per impostazione predefinita.
+
+* Nome del cluster
+* Posizione del cluster
+* Contatto del cluster
+* Nome del nodo
+* Nome aggregato
+* Nome del volume
+* Nome QoSAdaptivePolicyGroup
+* Nome QoSPolicyGroup
+* Nome del server virtuale
+* Nome LUN di archiviazione
+* Nome aggregato
+* Nome unità logica
+* Nome SVM
+* IP dell'istanza AIQUMInstance
+* FlexClone
+* NomeClusterRemoto
+
+
+====
+
+
+== Raccolta dati StorageGRID
+
+.<strong>Dati di utilizzo raccolti per StorageGRID: Scopri di più</strong>
+[%collapsible]
+====
+L'elenco seguente è un campione rappresentativo del `Logical Data` raccolti per StorageGRID:
+
+* ID StorageGRID
+* ID account
+* Nome utente
+* Quota account in byte
+* Nome del bucket
+* Conteggio oggetti bucket
+* Byte di dati del bucket
+
+
+L'elenco seguente è un campione rappresentativo del `Physical Data` raccolti per StorageGRID:
+
+* ID StorageGRID
+* Nodo ID
+* ID del sito
+* Nome del sito
+* Esempio
+* Byte di utilizzo dello storage StorageGRID
+* Metadati di utilizzo dello storage StorageGRID Byte
+
+
+====
+.<strong>Elenco degli elementi rimossi limitando l'accesso ai dati privati: Scopri di più</strong>
+[%collapsible]
+====
+Quando l'opzione *Rimuovi dati privati* è abilitata su Keystone Collector, le seguenti informazioni sull'utilizzo vengono eliminate per StorageGRID.  Questa opzione è abilitata per impostazione predefinita.
+
+* Nome utente
+* Nome del secchio
+* Nome del sito
+* Nome istanza/nodo
+
+
+====
+
+
+== Raccolta dati di telemetria
+
+.<strong>Dati di telemetria raccolti da Keystone Collector VM: Scopri di più</strong>
+[%collapsible]
+====
+L'elenco seguente è un campione rappresentativo dei dati di telemetria raccolti per i sistemi Keystone :
+
+* Informazioni di sistema
++
+** Nome del sistema operativo
+** Versione del sistema operativo
+** ID del sistema operativo
+** Nome host del sistema
+** Indirizzo IP predefinito del sistema
+
+
+* Utilizzo delle risorse di sistema
++
+** Tempo di attività del sistema
+** Numero di core della CPU
+** Carico di sistema (1 min, 5 min, 15 min)
+** Memoria totale
+** Memoria libera
+** Memoria disponibile
+** Memoria condivisa
+** Memoria buffer
+** Memoria memorizzata nella cache
+** Scambio totale
+** Scambio gratuito
+** Scambio memorizzato nella cache
+** Nome del file system del disco
+** Dimensione del disco
+** Disco utilizzato
+** Disco disponibile
+** Percentuale di utilizzo del disco
+** Punto di montaggio del disco
+
+
+* Pacchetti installati
+* Configurazione del collettore
+* Registri di servizio
++
+** Registri di servizio dai servizi Keystone
+
+
+
+
+====

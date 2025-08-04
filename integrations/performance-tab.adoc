@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: integrations/performance-tab.html 
+keywords: keystone-aiq, digital advisor keystone, performance tab 
+summary: Per monitorare le prestazioni dei tuoi sistemi, puoi visualizzare le metriche delle prestazioni dei volumi ONTAP gestiti dai tuoi abbonamenti Keystone . 
+---
+= Visualizza le metriche delle prestazioni
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per monitorare le prestazioni dei tuoi sistemi, puoi visualizzare le metriche delle prestazioni dei volumi ONTAP gestiti dai tuoi abbonamenti Keystone .
+
+
+TIP: Questa scheda è facoltativamente disponibile in Digital Advisor.  Contattare l'assistenza per visualizzare questa scheda.  Non è disponibile in BlueXP.
+
+Per visualizzare questa scheda in Digital Advisor, segui questi passaggi:
+
+.Passi
+. Fare clic su *Generale > Abbonamenti Keystone > Prestazioni*.
+. Selezionare il numero di abbonamento.  Per impostazione predefinita, viene selezionato il primo numero di abbonamento.
+. Selezionare il nome del volume richiesto dall'elenco.
++
+In alternativa, puoi cliccare suimage:aiq-ks-time-icon.png["icona del grafico"] icona su un volume ONTAP nella scheda *Volumi* per passare a questa scheda.
+
+. Selezionare l'intervallo di date per la query.  L'intervallo di date può essere l'inizio del mese o la data di inizio dell'abbonamento fino alla data corrente o alla data di fine dell'abbonamento.  Non è possibile selezionare una data futura.
+
+
+I dettagli recuperati si basano sull'obiettivo del livello di servizio prestazionale per ciascun livello di servizio prestazionale.  Ad esempio, il picco di IOPS, la velocità effettiva massima, la latenza target e altre metriche sono determinati dalle singole impostazioni per il livello di servizio delle prestazioni.  Per ulteriori informazioni sulle impostazioni, vederelink:../concepts/service-levels.html["Livelli di servizio prestazionali a Keystone"] .
+
+
+NOTE: Se si seleziona la casella di controllo *Linea di riferimento SLO*, i grafici IOPS, throughput e latenza vengono visualizzati in base all'obiettivo del livello di servizio delle prestazioni per il livello di servizio delle prestazioni.  Altrimenti vengono visualizzati in numeri reali.
+
+I dati sulle prestazioni visualizzati sul grafico orizzontale rappresentano una media calcolata ogni cinque minuti e sono organizzati in base all'intervallo di date della query.  È possibile scorrere i grafici e passare il mouse su punti dati specifici per analizzare più approfonditamente i dati raccolti.
+
+È possibile visualizzare e confrontare le metriche delle prestazioni nelle sezioni seguenti in base alla combinazione del numero di abbonamento, del nome del volume e dell'intervallo di date selezionato.  I dettagli vengono visualizzati in base al livello di servizio prestazionale assegnato al volume.  È possibile visualizzare il nome del cluster e il tipo di volume, ovvero le autorizzazioni di lettura e scrittura assegnate al volume.  Viene visualizzato anche qualsiasi messaggio di avviso associato al volume.
+
+
+
+== IOPS
+
+Questa sezione visualizza i grafici di input-output per i carichi di lavoro nel volume in base all'intervallo di date della query.  Vengono visualizzati i picchi IOPS per il livello di servizio delle prestazioni e gli IOPS correnti (negli ultimi cinque minuti, non basati sull'intervallo di date della query), insieme agli IOPS minimi, massimi e medi per l'intervallo di tempo, in IOPS/Tib.
+
+image:perf-iops.png["Sezione IOPS del grafico"]
+
+
+
+== Capacità di elaborazione
+
+Questa sezione visualizza i grafici della produttività per i carichi di lavoro nel volume in base all'intervallo di date della query.  Vengono visualizzati il throughput massimo per il livello di servizio delle prestazioni (SLO Max) e il throughput corrente (negli ultimi cinque minuti, non in base all'intervallo di date della query), insieme al throughput minimo, massimo e medio per l'intervallo di tempo, in MBps/TiB.
+
+image:perf-thr.png["Grafici di produttività"]
+
+
+
+== Latenza (ms)
+
+Questa sezione visualizza i grafici di latenza per i carichi di lavoro nel volume in base all'intervallo di date della query.  Vengono visualizzate la latenza massima per il livello di servizio delle prestazioni (SLO Target) e la latenza corrente (negli ultimi cinque minuti, non basata sull'intervallo di date della query), insieme alla latenza minima, massima e media per l'intervallo di tempo, in millisecondi.
+
+Questo grafico ha i seguenti colori:
+
+* Azzurro: _Latenza_.  Questa è la latenza effettiva che include qualsiasi latenza diversa da quella del servizio Keystone .  Ciò potrebbe includere latenza aggiuntiva, come quella che si verifica tra la rete e il client.
+* Blu scuro: _Latenza effettiva_.  La latenza effettiva è la latenza applicabile solo al tuo servizio Keystone in relazione al tuo SLA.
+
+
+image:perf-lat.png["grafici delle prestazioni"]
+
+
+
+== Logico utilizzato (TiB)
+
+Questa sezione visualizza le capacità fornite e quelle utilizzate logicamente del volume.  La capacità logica attualmente utilizzata (negli ultimi cinque minuti, non in base all'intervallo di date della query), insieme all'utilizzo minimo, massimo e medio per l'intervallo di tempo, vengono visualizzati in TiB.  In questo grafico, l'area grigia rappresenta la capacità impegnata, mentre il grafico giallo indica l'uso logico.
+
+image:perf-log-usd.png["grafico della capacità logica utilizzata"]
+
+*Informazioni correlate*
+
+* link:../integrations/dashboard-overview.html["Comprendere la dashboard Keystone"]
+* link:../integrations/subscriptions-tab.html["Visualizza i dettagli del tuo abbonamento"]
+* link:../integrations/current-usage-tab.html["Visualizza i dettagli dei tuoi consumi attuali"]
+* link:../integrations/consumption-tab.html["Visualizza le tendenze dei consumi"]
+* link:../integrations/subscription-timeline.html["Visualizza la cronologia del tuo abbonamento"]
+* link:../integrations/assets-tab.html["Visualizza le risorse del tuo abbonamento Keystone"]
+* link:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"]
+* link:../integrations/volumes-objects-tab.html["Visualizza i dettagli dei volumi e degli oggetti"]
+

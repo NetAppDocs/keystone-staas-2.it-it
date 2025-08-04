@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-installation.html 
+keywords: install, VMware 
+summary: Distribuisci Keystone Collector su un sistema VMware vSphere scaricando il modello OVA, distribuendo il modello e altro ancora. 
+---
+= Distribuisci Keystone Collector sui sistemi VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La distribuzione Keystone Collector sui sistemi VMware vSphere include il download del modello OVA, la distribuzione del modello tramite la procedura guidata *Distribuisci modello OVF*, la verifica dell'integrità dei certificati e la verifica della prontezza della VM.
+
+
+
+== Distribuzione del modello OVA
+
+Segui questi passaggi:
+
+.Passi
+. Scarica il file OVA da https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["questo collegamento"^] e memorizzarlo sul tuo sistema VMware vSphere.
+. Nel sistema VMware vSphere, vai alla vista *VM e modelli*.
+. Fare clic con il pulsante destro del mouse sulla cartella richiesta per la macchina virtuale (VM) (o sul data center, se non si utilizzano cartelle VM) e selezionare *Distribuisci modello OVF*.
+. Nel _Passaggio 1_ della procedura guidata *Distribuisci modello OVF*, fai clic su *Seleziona un modello OVF* per selezionare il modello scaricato `KeystoneCollector-latest.ova` file.
+. Nel _Passaggio 2_, specificare il nome della VM e selezionare la cartella della VM.
+. Nel _Passaggio 3_, specificare la risorsa di elaborazione richiesta per eseguire la VM.
+. Nel _Passaggio 4: Verifica i dettagli_, verifica la correttezza e l'autenticità del file OVA. Le versioni di vCenter precedenti alla 7.0u2 non sono in grado di verificare automaticamente l'autenticità del certificato di firma del codice. vCenter 7.0u2 e versioni successive possono eseguire le verifiche; tuttavia, per questo, è necessario aggiungere l'autorità di certificazione firmataria a vCenter.  Seguire queste istruzioni per la propria versione di vCenter:
++
+.vCenter 7.0u1 e versioni precedenti: Scopri di più
+[%collapsible]
+====
+vCenter convalida l'integrità del contenuto del file OVA e verifica che venga fornito un digest di firma del codice valido per i file contenuti nel file OVA.  Tuttavia, non convalida l'autenticità del certificato di firma del codice.  Per verificare l'integrità, è necessario scaricare il certificato completo di firma e confrontarlo con il certificato pubblico pubblicato da Keystone.
+
+.. Fare clic sul collegamento *Editore* per scaricare il certificato completo del digest di firma.
+.. Scarica il certificato pubblico _Keystone Billing_ da https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem["questo collegamento"^] .
+.. Verificare l'autenticità del certificato di firma OVA rispetto al certificato pubblico utilizzando OpenSSL:
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+
+
+====
++
+.vCenter 7.0u2 e versioni successive: Scopri di più
+[%collapsible]
+====
+Le versioni 7.0u2 e successive di vCenter sono in grado di convalidare l'integrità del contenuto del file OVA e l'autenticità del certificato di firma del codice, quando viene fornito un digest di firma del codice valido.  L'archivio attendibilità radice di vCenter contiene solo certificati VMware.  NetApp utilizza Entrust come autorità di certificazione e tali certificati devono essere aggiunti all'archivio attendibile di vCenter.
+
+.. Scarica il certificato CA di firma del codice da Entrust https://web.entrust.com/subca-certificates/OVCS2-CSBR1-crosscert.cer["Qui"^] .
+.. Seguire i passaggi nel `Resolution` sezione di questo articolo della knowledge base (KB): https://kb.vmware.com/s/article/84240[] .
+
+
+====
++
+Una volta convalidata l'integrità e l'autenticità del Keystone Collector OVA, è possibile visualizzare il testo `(Trusted certificate)` con l'editore.image:ova-deploy.png["Interfaccia utente OVA che mostra un certificato verificato"]
+
+. Nel _Passaggio 5_ della procedura guidata *Distribuisci modello OVF*, specificare la posizione in cui archiviare la VM.
+. Nel _Passaggio 6_, selezionare la rete di destinazione che la VM dovrà utilizzare.
+. Nel _Passaggio 7 Personalizza modello_, specificare l'indirizzo di rete iniziale e la password per l'account utente amministratore.
++
+
+NOTE: La password di amministrazione è memorizzata in un formato reversibile in vCenter e deve essere utilizzata come credenziale di bootstrap per ottenere l'accesso iniziale al sistema VMware vSphere.  Durante la configurazione iniziale del software, questa password di amministrazione dovrebbe essere modificata.  La maschera di sottorete per l'indirizzo IPv4 deve essere fornita in notazione CIDR.  Ad esempio, utilizzare il valore 24 per una subnet mask di 255.255.255.0.
+
+. Al _Passaggio 8 Pronto per il completamento_ della procedura guidata *Distribuisci modello OVF*, rivedere la configurazione e verificare di aver impostato correttamente i parametri per la distribuzione OVA.
+
+
+Dopo aver distribuito la VM dal modello e averla accesa, aprire una sessione SSH sulla VM e accedere con le credenziali di amministratore temporanee per verificare che la VM sia pronta per la configurazione.
+
+
+
+== Configurazione iniziale del sistema
+
+Per una configurazione iniziale dei server Keystone Collector distribuiti tramite OVA, eseguire questi passaggi sui sistemi VMware vSphere:
+
+
+NOTE: Una volta completata la distribuzione, è possibile utilizzare l'utilità Keystone Collector Management Terminal User Interface (TUI) per eseguire le attività di configurazione e monitoraggio.  È possibile utilizzare vari comandi da tastiera, come Invio e i tasti freccia, per selezionare le opzioni e navigare all'interno di questa TUI.
+
+. Aprire una sessione SSH sul server Keystone Collector.  Quando ti connetti, il sistema ti chiederà di aggiornare la password di amministratore.  Completare l'aggiornamento della password di amministrazione come richiesto.
+. Accedi utilizzando la nuova password per accedere al TUI.  All'accesso viene visualizzata la TUI.
++
+In alternativa, è possibile avviarlo manualmente eseguendo il comando `keystone-collector-tui` Comando CLI.
+
+. Se necessario, configurare i dettagli del proxy nella sezione *Configurazione > Rete* sulla TUI.
+. Configurare il nome host del sistema, la posizione e il server NTP nella sezione *Configurazione > Sistema*.
+. Aggiornare i Keystone Collector utilizzando l'opzione *Manutenzione > Aggiorna Collector*.  Dopo l'aggiornamento, riavviare l'utilità TUI di gestione Keystone Collector per applicare le modifiche.
+

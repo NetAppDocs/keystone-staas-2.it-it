@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
+summary: In qualità di abbonato NetApp Keystone STaaS, puoi ottenere una panoramica dei tuoi abbonamenti dalla dashboard Digital Advisor . 
+---
+= Dashboard Keystone in Digital Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+In qualità di abbonato NetApp Keystone STaaS, puoi ottenere una panoramica dei tuoi abbonamenti nel widget *Abbonamenti Keystone * della dashboard Digital Advisor .
+
+È possibile cercare un abbonamento Keystone specifico inserendo i primi tre caratteri del nome di un cliente o di una watchlist oppure il numero dell'abbonamento Keystone .  Per informazioni su come cercare gli abbonamenti Keystone STaaS tramite le watchlist, vederelink:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Cerca tramite le watchlist Keystone"] .
+
+Digital Advisor offre una dashboard unificata che fornisce informazioni dettagliate sui vari livelli dei dati dell'abbonamento e sulle informazioni di utilizzo tramite il pulsante *Passa alla dashboard precedente/nuova*.
+
+.Dashboard predefinita (vecchia)
+Puoi visualizzare il nome del cliente e il numero di abbonamento, il nome dell'account, le date di inizio e fine dell'abbonamento e i grafici di utilizzo della capacità in base ai livelli di servizio delle prestazioni sottoscritti.  È possibile visualizzare l'orario di raccolta dei dati di consumo in ora UTC.
+
+image:old-db-3.png["vecchio cruscotto"]
+
+.Dashboard alternativa (nuova)
+Puoi visualizzare la ripartizione dell'utilizzo della capacità in base ai tuoi abbonamenti, nonché avvisi e notifiche che richiedono attenzione o azione immediata.  Le informazioni vengono visualizzate in modo selettivo, a seconda dei tuoi abbonamenti e dello stato del tuo utilizzo.  Puoi visualizzare queste informazioni:
+
+* *Utilizzo della capacità*: dati di consumo quali nessun utilizzo, consumo superiore all'80% della capacità impegnata, utilizzo a raffica e consumo superiore alla capacità a raffica.
+* *Avvisi*: vengono visualizzati avvisi per vari scenari, se applicabili al tuo caso.
++
+** *In scadenza a breve*: nel caso in cui i tuoi abbonamenti scadano entro 90 giorni.
+** *Avvisi QoS*: sono presenti volumi senza criteri AQoS assegnati.
++
+
+TIP: Fare clic sul collegamento *Abbonamenti* per visualizzare l'elenco degli abbonamenti filtrati nella scheda *Abbonamenti*.
+
+
+
+
+
+image:new-db-4.png["nuova dashboard"]
+
+Puoi fare clic su *Visualizza tutti gli abbonamenti* per visualizzare i dettagli di utilizzo e gli avvisi sui tuoi volumi nella pagina *Abbonamenti Keystone *.
+
+I dettagli degli abbonamenti, i grafici di utilizzo per ciascun livello di servizio prestazionale e i dettagli del volume vengono visualizzati nelle diverse schede della schermata *Abbonamenti Keystone *.
+
+
+NOTE: Il consumo di capacità negli abbonamenti Keystone viene visualizzato in TiB nei dashboard e nei report e arrotondato a due cifre decimali.  Se l'utilizzo è inferiore a 0,01 TiB, il valore viene visualizzato come 0 o Nessun utilizzo.  I dati su queste schermate vengono visualizzati in base all'ora UTC (fuso orario del server).  Quando si inserisce una data per la query, questa viene automaticamente considerata in base all'ora UTC.  Per saperne di più sulle metriche di utilizzo, fare riferimento alink:../concepts/metrics.html#metrics-measurement["Misurazione delle metriche"] .  Per informazioni sulle diverse capacità utilizzate in Keystone, vederelink:../concepts/supported-storage-capacity.html["Capacità di archiviazione supportate"] .
+
+
+
+== Ricerca per liste di controllo Keystone
+
+La watchlist è una funzionalità disponibile in Digital Advisor.  Per informazioni, vedere https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Comprendere la lista di controllo"^] .  Per informazioni sulla creazione di liste di controllo, vedere https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Crea una lista di controllo"^] .
+
+È possibile creare liste di controllo per clienti o numeri di abbonamento e cercare un abbonamento Keystone utilizzando i primi tre caratteri di un numero di abbonamento o del nome della lista di controllo nella schermata Digital Advisor .  Quando si effettua una ricerca per nome di una watchlist, è possibile visualizzare i clienti e i relativi abbonamenti nell'elenco a discesa *Abbonamento* nel widget *Abbonamenti Keystone *.
+
+
+NOTE: Una ricerca tramite liste di controllo recupera l'elenco degli abbonamenti nella vecchia dashboard.  Se una watchlist è composta da numeri di abbonamenti, nella dashboard Digital Advisor viene visualizzato solo il widget *Abbonamenti Keystone *.
+
+image:watchlist.png["schermata della lista di controllo"]
+
+*Informazioni correlate*
+
+* link:../integrations/dashboard-access.html["Inizia con la dashboard Keystone"]
+* link:../integrations/keystone-bluexp.html["Dashboard Keystone in BlueXP"]
+* link:../integrations/subscriptions-tab.html["Visualizza i dettagli del tuo abbonamento"]
+* link:../integrations/current-usage-tab.html["Visualizza i dettagli dei tuoi consumi attuali"]
+* link:../integrations/consumption-tab.html["Visualizza le tendenze dei consumi"]
+

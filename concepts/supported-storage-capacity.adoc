@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: Scopri i tipi di capacità di archiviazione supportati dal servizio NetApp Keystone STaaS per la versione 2. 
+---
+= Capacità di archiviazione supportate in Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il servizio NetApp Keystone STaaS supporta diversi tipi di capacità di archiviazione.  La comprensione di questi diversi termini di capacità può essere utile durante l'utilizzo Keystone.
+
+
+
+== Capacità logica
+
+Si tratta dei dati inseriti nell'infrastruttura Keystone da un cliente.  Tutte le capacità Keystone fanno riferimento a una capacità logica.  Ad esempio, se un file da 1 TiB è archiviato sull'infrastruttura Keystone , è necessario acquistare una capacità minima di 1 TiB.
+
+
+
+== Capacità impegnata
+
+La capacità logica minima fatturata ogni mese durante l'abbonamento:
+
+* La capacità è garantita per ogni livello di servizio.
+* Nel corso del periodo è possibile aggiungere capacità impegnata e livelli di servizio aggiuntivi.
+
+
+
+
+=== Modifiche alla capacità impegnata
+
+Durante la durata di un abbonamento, è possibile modificare le capacità impegnate.  Tuttavia, ci sono alcune precondizioni:
+
+* La capacità impegnata può essere ridotta in base a determinate condizioni.  Per informazioni, vederelink:../concepts/capacity-requirements.html["Riduzione della capacità"] .
+* La capacità impegnata non può essere aumentata 90 giorni prima della scadenza dell'abbonamento, a meno che l'abbonamento non venga rinnovato per un ulteriore periodo di 12 mesi.
+* È possibile richiedere modifiche alla capacità impegnata tramite l'interfaccia BlueXP o tramite il Keystone Success Manager (KSM).  Per informazioni sulla richiesta di modifiche, vederelink:../concepts/gssc.html["Supporto NetApp Keystone"] .
+
+
+
+
+== Capacità consumata
+
+La capacità consumata si riferisce alla capacità (in TiB di storage) attualmente consumata dal servizio.  È la somma di:
+
+* Capacità logica utilizzata per archiviare tutte le istanze e i tipi di dati utente (come copie, copie speculari e versioni).
+* Capacità logica utilizzata per archiviare volumi clone che superano del 10% le dimensioni del volume originale.
+* Capacità fisica utilizzata per archiviare i dati differenziali dalle copie Snapshot.
+* La capacità fisica assegnata.
+
+
+
+
+== Capacità di scoppio
+
+Il servizio NetApp Keystone consente di utilizzare capacità aggiuntiva oltre alla capacità impegnata per un livello di servizio.  Questo è definito utilizzo della capacità burst.
+
+Nota questi punti:
+
+* La capacità di scoppio è concordata nell'accordo Keystone .  Solitamente è impostato fino al 20% in più rispetto alla capacità impegnata e viene addebitato alla stessa tariffa della capacità impegnata.
+* La capacità di scoppio può essere consumata in modo elastico e viene addebitata su base giornaliera per la media consumata.
+
+
+
+
+== Capacità fatturata
+
+Fattura mensile = (capacità impegnata [TiB] * tariffa impegnata [$/TiB]) + (capacità burst media giornaliera fornita [TiB] * tariffa burst [$/TiB]).  La fattura mensile prevede un addebito minimo in base alla capacità impegnata.
+
+La bolletta mensile varia oltre la tariffa minima in base al consumo medio giornaliero della capacità di picco.

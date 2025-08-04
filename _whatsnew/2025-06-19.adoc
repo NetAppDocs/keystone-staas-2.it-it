@@ -1,0 +1,18 @@
+= Dashboard Keystone in BlueXP
+:allow-uri-read: 
+
+
+
+
+=== Dashboard Keystone in BlueXP
+
+Ora puoi accedere alla dashboard Keystone direttamente da BlueXP.  Questa integrazione ti offre un unico posto in cui monitorare, gestire e tenere traccia di tutti i tuoi abbonamenti Keystone insieme agli altri servizi NetApp .
+
+Con la dashboard Keystone in BlueXP puoi:
+
+* Visualizza tutti i dettagli del tuo abbonamento, l'utilizzo della capacità e le risorse in un unico posto.
+* Gestisci facilmente gli abbonamenti e richiedi modifiche in base all'evoluzione delle tue esigenze.
+* Rimani aggiornato sulle ultime informazioni relative al tuo ambiente di archiviazione.
+
+
+Per iniziare, vai su *Archiviazione > Keystone* nel menu di navigazione a sinistra BlueXP .  Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Panoramica della dashboard Keystone"] .

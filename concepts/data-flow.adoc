@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: I dati nei sistemi Keystone STaaS passano attraverso Keystone Collector e lo strumento di soluzione AIOPs, che è il sistema di monitoraggio associato. 
+---
+= Flusso di dati Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+I dati nei sistemi Keystone STaaS passano attraverso Keystone Collector e la soluzione di monitoraggio ITOM, che è il sistema di monitoraggio associato.
+
+
+
+== Flusso di dati di Keystone Collector
+
+Keystone Collector avvia chiamate API REST ai controller di archiviazione e ottiene periodicamente i dettagli di utilizzo dei controller, come indicato in questo diagramma di flusso:
+
+image:data-collector-flow.png["mostra il flusso di dati all'interno dei componenti del collettore"]
+
+.Leggenda
+. NetApp Keystone Collector avvia la connessione al cloud Keystone .
+. Il firewall gestito dal cliente consente la connessione.
+. Keystone Collector stabilisce una connessione REST API direttamente alla connessione di gestione del controller di storage o dei tunnel tramite Active IQ Unified Manager per raccogliere dati sull'utilizzo e sulle prestazioni.
+. Questi dati vengono inviati in modo sicuro ai componenti cloud Keystone tramite HTTPS.
+
+
+
+
+== Monitoraggio dei flussi di dati
+
+Il monitoraggio continuo dello stato di salute dell'infrastruttura di storage è una delle caratteristiche più importanti del servizio Keystone .  Per il monitoraggio e la reportistica, Keystone utilizza la soluzione di monitoraggio ITOM.  L'immagine seguente descrive come l'accesso remoto alla sede del cliente è protetto dalla soluzione di monitoraggio ITOM.  I clienti possono scegliere di abilitare la funzionalità di sessione remota, che consente al team di supporto Keystone di connettersi ai dispositivi monitorati per la risoluzione dei problemi.
+
+image:monitoring-flow-2.png["flusso di dati"]
+
+.Leggenda
+. Il gateway della soluzione di monitoraggio ITOM avvia una sessione TLS sul portale cloud.
+. Il firewall gestito dal cliente consente la connessione.
+. Il server della soluzione di monitoraggio ITOM nel cloud accetta la connessione.
+. Viene stabilita una sessione TLS tra il portale cloud e il gateway locale.
+. I controller NetApp inviano avvisi tramite il protocollo SNMP/Syslog o rispondono alle richieste API al gateway locale.
+. Il gateway locale invia questi avvisi al suo portale cloud utilizzando la sessione TLS stabilita in precedenza.
+
+
+
+
+== Standard di conformità
+
+La soluzione di monitoraggio Keystone ITOM è conforme al Regolamento generale sulla protezione dei dati (GDPR) dell'Unione Europea e al California Consumer Privacy Act (CCPA).  Fornisce inoltre unlink:https://www.logicmonitor.com/legal/data-processing-addendum["Addendum sulla protezione dei dati (DPA)"^] per documentare questi impegni.  La soluzione di monitoraggio ITOM non raccoglie né memorizza dati personali.

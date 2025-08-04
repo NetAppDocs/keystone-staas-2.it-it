@@ -1,0 +1,140 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-performance.html 
+keywords: sustainability, sla, service level agreement, slo, service level objectives 
+summary: 'Keystone offre SLO basati sulla latenza per livello di servizio delle prestazioni, come descritto nell"ordine Keystone per la capacità consumata fino al limite di burst.' 
+---
+= SLO delle prestazioni
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone offre SLO basati sulla latenza per livello di servizio prestazionale, come descritto nell'ordine Keystone per la capacità consumata fino al limite di burst, secondo i termini e le condizioni elencati di seguito.
+
+
+
+== Metrica
+
+* *Prestazioni degradate*: quantità di tempo, in minuti, per incidente, durante la quale non viene raggiunto l'obiettivo di latenza del 90° percentile.
+* La latenza del *90° percentile* viene misurata per volume, per livello di prestazioni, per tutti i volumi all'interno di un ordine Keystone .  La latenza viene campionata ogni cinque minuti e il valore del 90° percentile calcolato su un periodo di 24 ore viene utilizzato come misura giornaliera, considerando i seguenti punti:
++
+** Per un campione vengono considerati i volumi che registrano almeno cinque IOPS al momento della raccolta delle metriche.
+** I volumi con più del 30% di operazioni di scrittura al momento della raccolta delle metriche sono esclusi dal campione.
+** La latenza aggiunta da AQoS per IOPS/TiB richiesti che è maggiore di IOPS/TiB target è esclusa dal campione.
+** La latenza aggiunta da AQoS per mantenere IOPS minimi per volume è esclusa dal campione.
+** Per i volumi in cui è abilitato FabricPool , la latenza generata dal trasferimento dei dati da e verso l'archiviazione di destinazione (cold) non viene conteggiata.
+** La latenza causata dall'applicazione, dall'host o dalla rete del cliente al di fuori del cluster ONTAP non viene conteggiata.
+** Quando si utilizza il servizio aggiuntivo di protezione dati avanzata, la latenza di destinazione include solo le operazioni di I/O da e verso l'array di archiviazione locale.
+** Nell'arco di 24 ore devono essere disponibili almeno dieci metriche valide.  In caso contrario, le metriche verranno eliminate.
+** Se a uno o più volumi di un array di storage non è applicata una policy AQoS valida, il numero di IOPS disponibili per altri volumi potrebbe essere influenzato e NetApp non sarà responsabile del raggiungimento o del raggiungimento dei livelli di prestazioni su tale array di storage.
+** Nelle configurazioni FabricPool , i livelli di prestazioni sono applicabili quando tutti i blocchi di dati richiesti si trovano nell'archiviazione sorgente (hot) FabricPool e l'archiviazione sorgente non è in una relazione sincrona SnapMirror .
+
+
+
+
+
+
+== Livelli di servizio prestazionali
+
+Tutti i livelli di servizio prestazionali supportati dagli array di storage flash ONTAP sono idonei per Performance SLO e garantiscono il rispetto della seguente latenza target:
+
+|===
+
+
+| *Livello di servizio* | Estremo | Premio | Prestazione | Standard 
+
+
+ a| 
+*Obiettivo di latenza del 90° percentile*
+| <1 ms | <2 ms | <4 ms | <4 ms 
+|===
+Per saperne di più sui requisiti di latenza dei livelli di servizio delle prestazioni, fare riferimento alink:../concepts/service-levels.html["Livelli di servizio prestazionali a Keystone"] .
+
+
+
+== Crediti di servizio
+
+
+NOTE: SLA e garanzie sono disponibili su base nominativa.
+
+NetApp emette crediti di servizio per le prestazioni degradate:
+
+|===
+
+
+| *Soglia di prestazione* | *Credito di servizio* 
+
+
+ a| 
+Latenza del 90° percentile > latenza target
+| 3% per ogni giorno di calendario di accadimento 
+|===
+
+
+=== Calcolo del credito di servizio
+
+I crediti di servizio vengono determinati utilizzando la seguente formula:
+
+Crediti di servizio = (capacità interessata / capacità totale impegnata) X tariffe di capacità X giorni interessati X percentuale di credito
+
+Dove:
+
+* *capacità interessata*: quantità di capacità immagazzinata interessata.
+* *capacità totale impegnata*: la capacità impegnata per il livello di servizio prestazionale per l'ordine Keystone .
+* *commissioni di capacità*: le commissioni per il livello di prestazione interessato secondo l'ordinanza Keystone .
+* *giorni interessati*: numero di giorni di calendario interessati.
+* *percentuale di credito*: la percentuale predeterminata per il credito di servizio.
+
+
+*Esempio*
+
+L'esempio seguente mostra il metodo di calcolo dei crediti di servizio:
+
+|===
+
+
+| *Livello di servizio* | *Capacità interessata* | *Capacità totale impegnata* | *Commissioni di capacità* | *Giorni del calendario interessati* | *Percentuale di credito* 
+
+
+ a| 
+Estremo
+| 10 Tib | 50 Tib | $1000 | 2 | 3% 
+|===
+Utilizzando la formula: Crediti di servizio = ( 10 / 50 ) X 1000 x 2 x 0,03
+
+In base al calcolo, i crediti per il servizio ammonteranno a 12 $.
+
+
+
+=== Richiesta di credito per il servizio
+
+Se viene rilevata una violazione dell'SLA, aprire un ticket di supporto con priorità 3 (P3) con il supporto NetApp Keystone .
+
+* Sono richiesti i seguenti dettagli:
++
+.. Numero di abbonamento Keystone
+.. Dettagli sui volumi e sul controller di archiviazione
+.. Luogo, ora, data e descrizione del problema
+.. Durata calcolata del rilevamento della latenza
+.. Strumenti e metodi di misurazione
+.. Qualsiasi altro documento applicabile
+
+
+* Fornire i dettagli nel foglio Excel come mostrato di seguito per un ticket P3 aperto con il supporto NetApp Keystone .
++
+image:sla-breach.png["modello di foglio Excel"]
+
+
+
+[NOTE]
+====
+* Una richiesta di credito per il servizio deve essere avviata entro sei settimane dalla convalida della violazione da parte del supporto NetApp Keystone .  Tutti i crediti di servizio devono essere riconosciuti e approvati da NetApp.
+* I crediti di servizio potranno essere applicati a una fattura futura.  I crediti di servizio non si applicano agli abbonamenti Keystone scaduti.  Per saperne di più, fare riferimento alink:../concepts/gssc.html["Supporto NetApp Keystone"] .
+
+
+====
