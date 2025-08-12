@@ -187,6 +187,8 @@ Per il livello di servizio delle prestazioni _Advanced Data-Protect_, il grafico
 
 image:adp-src-2.png["base primaria mcc"]
 
+Il consumo visualizzato di 94,21 TiB rappresenta l'utilizzo per l'abbonamento principale.  Poiché la protezione avanzata dei dati suddivide il consumo tra i siti partner con abbonamenti separati, questo grafico mostra solo l'utilizzo del sito principale.  Per informazioni sui prezzi del servizio aggiuntivo di protezione dati avanzata, fare riferimento alink:../concepts/adp.html#understand-pricing["Capire i prezzi"] .
+
 .Cosa puoi vedere per l'abbonamento secondario (sito mirror)
 Quando si controlla l'abbonamento secondario, è possibile vedere che il grafico a barre per il livello di servizio delle prestazioni _Performance_ (livello di servizio delle prestazioni di base) nello stesso punto di raccolta dati del sito partner è invertito e la ripartizione del consumo nei siti primario e mirror è rispettivamente di 93,38 TiB e 95,04 TiB.
 

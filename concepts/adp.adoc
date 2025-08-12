@@ -25,7 +25,13 @@ Il servizio avanzato di protezione dei dati Keystone può eseguire il mirroring 
 
 Per informazioni su come visualizzare il consumo in una configurazione MetroCluster , vederelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Grafici di riferimento per la protezione avanzata dei dati"] .
 
-I costi aggiuntivi si applicano a tutte le capacità del tuo abbonamento, inclusi i dati sorgente, le copie speculari e i dati non speculari.
+
+
+== Capire i prezzi
+
+Il prezzo del servizio aggiuntivo di protezione avanzata dei dati è calcolato in base alla capacità impegnata in ogni sito.  Ciò aiuta a determinare il costo effettivo del servizio avanzato di protezione dei dati in $/TiB. I costi aggiuntivi si applicano a tutte le capacità del tuo abbonamento, inclusi i dati sorgente, le copie speculari e i dati non speculari.
+
+Per la configurazione MetroCluster , ogni sito richiede il proprio abbonamento e ti verrà addebitata la capacità impegnata in modo indipendente su ogni sito.  Per informazioni sulla fatturazione, fare riferimento alink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Fatturazione per la protezione avanzata dei dati"] .
 
 Notare quanto segue:
 

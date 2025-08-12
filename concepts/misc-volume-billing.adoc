@@ -35,10 +35,12 @@ Notare quanto segue:
 
 La protezione avanzata dei dati utilizza NetApp MetroCluster per eseguire il mirroring dei dati tra due cluster fisicamente separati.  Per gli aggregati mirror di MetroCluster , i dati vengono scritti due volte, una volta su ciascun cluster.  Il servizio Keystone addebita i consumi su ciascun lato in modo indipendente, ottenendo così due registrazioni di consumo identiche.  I costi aggiuntivi vengono applicati a tutte le capacità dell'abbonamento, indipendentemente dal fatto che i dati siano all'origine, siano dati mirror o non mirror.
 
+Ogni sito MetroCluster ha il proprio abbonamento e la propria fatturazione.  Per le configurazioni MetroCluster , la misurazione dell'utilizzo tiene conto del modo in cui lo storage viene utilizzato in entrambi i siti.  Se si dispone di una configurazione MetroCluster con 100 TiB per sito, solo 50 TiB vengono utilizzati attivamente su ciascun sito, mentre i restanti 50 TiB in ciascun sito fungono da backup speculare.  I costi aggiuntivi per la protezione avanzata dei dati vengono calcolati in base a questi 100 TiB di utilizzo attivo totale e suddivisi tra entrambi i siti tramite i rispettivi abbonamenti a 50 TiB ciascuno.
+
 Se monitori i tuoi cluster tramite ONTAP System Manager (System Manager) o Active IQ Unified Manager (Unified Manager), potresti notare una discrepanza tra il consumo segnalato su questi strumenti e Keystone.  System Manager e Unified Manager non segnalano i volumi sul cluster mirror (remoto) e, così facendo, segnalano la metà delle metriche di consumo segnalate dal servizio Keystone .
 
 .Esempio:
-Il sito A e il sito B sono impostati in una configurazione MetroCluster .  Quando un utente crea un volume di 10 TB nel sito A, nel sito B viene creato un volume identico di 10 TB. Keystone identifica 10 TB di consumo in ciascun sito, per un aumento totale di 20 TB.  System Manager e Unified Manager segnalano un volume da 10 TB creato nel sito A, ma non segnalano un volume da 10 TB nel sito B.
+Il sito A e il sito B sono impostati in una configurazione MetroCluster . Quando un utente crea un volume di 10 TB nel sito A, nel sito B viene creato un volume identico di 10 TB. Keystone identifica 10 TB di consumo in ciascun sito, per un aumento totale di 20 TB. System Manager e Unified Manager segnalano un volume da 10 TB creato nel sito A, ma non segnalano un volume da 10 TB nel sito B.
 
 Inoltre, tutti i volumi creati su un sistema Keystone con protezione dati avanzata verranno conteggiati nel consumo di protezione dati avanzata, indipendentemente dal fatto che tali volumi siano sottoposti a mirroring o meno.
 
