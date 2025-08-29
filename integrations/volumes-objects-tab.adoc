@@ -54,7 +54,7 @@ image:volume-summary-2.png["Scheda Riepilogo volume"]
 NOTE: Le policy QoS non sono applicabili nella versione 3 Keystone .
 
 +
-È possibile utilizzare *Nascondi/Mostra colonne* per aggiungere o rimuovere le colonne visualizzate nella tabella.  Per impostazione predefinita, vengono selezionate tutte le colonne, tranne la colonna *Dipartimento*.  Puoi selezionare o deselezionare qualsiasi colonna, inclusa la colonna *Dipartimento*, e le tue preferenze verranno salvate per un utilizzo successivo.  Quando si scarica il report CSV, i dettagli della colonna *Dipartimento* verranno inclusi se selezionati, mentre le altre colonne verranno visualizzate indipendentemente dal loro stato di selezione nella tabella.
+È possibile utilizzare *Nascondi/Mostra colonne* per aggiungere o rimuovere le colonne visualizzate nella tabella. Per impostazione predefinita, la tabella mostra le preferenze delle colonne salvate in precedenza. Le colonne aggiunte di recente, come le colonne *Dipartimento* o *Impronta totale*, sono nascoste per impostazione predefinita e devono essere selezionate manualmente per essere visualizzate nella tabella. Puoi selezionare o deselezionare qualsiasi colonna e le tue preferenze verranno salvate per un utilizzo successivo. Quando si scarica il report CSV, tutte le colonne disponibili vengono incluse nell'esportazione, indipendentemente dalle preferenze di visualizzazione.
 
 +
 
