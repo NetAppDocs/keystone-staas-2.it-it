@@ -30,13 +30,13 @@ La dashboard Keystone in BlueXP ora include una scheda *Monitoraggio* per gestir
 * Crea monitor di avviso per monitorare l'utilizzo della capacità e gli eventi di scadenza degli abbonamenti.
 
 
-Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Visualizza e gestisci avvisi e monitor"] .
+Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas-2/integrations/monitoring-alerts.html["Visualizza e gestisci avvisi e monitor"] .
 
 
 
 === Visualizzazione semplificata dei livelli di servizio delle prestazioni
 
-È possibile visualizzare le informazioni sui livelli di servizio delle prestazioni, ora spostate da una scheda separata a una vista espandibile, all'interno della scheda *Abbonamenti*. Fare clic sulla freccia rivolta verso il basso accanto alla colonna *Data di scadenza* per visualizzarle per ciascun abbonamento. Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Visualizza i dettagli sui tuoi abbonamenti Keystone"] .
+È possibile visualizzare le informazioni sui livelli di servizio delle prestazioni, ora spostate da una scheda separata a una vista espandibile, all'interno della scheda *Abbonamenti*. Fare clic sulla freccia rivolta verso il basso accanto alla colonna *Data di scadenza* per visualizzarle per ciascun abbonamento. Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas-2/integrations/subscriptions-tab.html["Visualizza i dettagli sui tuoi abbonamenti Keystone"] .
 
 
 
