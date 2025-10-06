@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, NetApp Console, Console 
 summary: Utilizzare la scheda Risorse per visualizzare i dettagli dei cluster e dei nodi ONTAP e delle griglie, dei siti e dei nodi StorageGRID gestiti dagli abbonamenti Keystone . 
 ---
 = Visualizza le risorse su più abbonamenti Keystone
@@ -14,19 +14,19 @@ summary: Utilizzare la scheda Risorse per visualizzare i dettagli dei cluster e 
 
 
 [role="lead"]
-La dashboard Keystone in BlueXP consente di visualizzare informazioni dettagliate sui nodi nei cluster, sui volumi forniti e sui nodi StorageGRID su più abbonamenti Keystone , in base alle autorizzazioni di accesso.  Questa visualizzazione non è disponibile in Digital Advisor.
+La dashboard Keystone nella console NetApp consente di visualizzare informazioni dettagliate sui nodi nei cluster, sui volumi forniti e sui nodi StorageGRID su più abbonamenti Keystone , in base alle autorizzazioni di accesso. Questa visualizzazione non è disponibile in Digital Advisor.
 
 [role="tabbed-block"]
 ====
 .Nodi nei cluster
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Risorse*.
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Risorse*.
 +
-La scheda *Risorse* visualizza la sotto-scheda *Nodi nel cluster*.
+La pagina *Risorse* visualizza la scheda *Nodi nel cluster*.
 
 +
-image:bxp-nodes-clusters-multiple-subscription.png["Uno screenshot dei nodi nei cluster per più abbonamenti"]
+image:console-nodes-clusters-multiple-subscription.png["Uno screenshot dei nodi nei cluster per più abbonamenti"]
 
 +
 È possibile visualizzare informazioni dettagliate su tutti i nodi nei cluster negli abbonamenti Keystone , inclusi numeri di serie dei nodi, stato, impostazioni di efficienza di archiviazione, tipo di piattaforma e dettagli sulla capacità.  Riceverai anche una panoramica di:
@@ -47,10 +47,10 @@ TIP: È possibile personalizzare la tabella utilizzando il selettore di colonnai
 .Volumi in cluster
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Risorse*.
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Risorse*.
 . Selezionare la scheda *Volumi in cluster*.
 +
-image:bxp-volumes-clusters-multiple-sub.png["Uno screenshot dei volumi nei cluster per più abbonamenti"]
+image:console-volumes-clusters-multiple-sub.png["Uno screenshot dei volumi nei cluster per più abbonamenti"]
 
 +
 Vengono visualizzate informazioni dettagliate su tutti i volumi nei cluster negli abbonamenti Keystone , tra cui nome del volume, numero di abbonamento, numero di serie del nodo, conformità con i criteri QoS, nome del cluster, nome host e livelli di servizio delle prestazioni.  È possibile monitorare la capacità fornita, l'utilizzo logico e fisico e i dati inattivi.  Riceverai anche una panoramica di:
@@ -73,10 +73,10 @@ Puoi fare clic su un numero di abbonamento nella colonna *Numero di abbonamento*
 .Nodi nelle griglie
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Risorse*.
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Risorse*.
 . Selezionare la scheda *Nodi nelle griglie*.
 +
-image:bxp-nodes-grids-multiple-sub.png["Uno screenshot dei nodi nelle griglie per più abbonamenti"]
+image:console-nodes-grids-multiple-sub.png["Uno screenshot dei nodi nelle griglie per più abbonamenti"]
 
 +
 È possibile visualizzare informazioni dettagliate su tutti i nodi nelle griglie degli abbonamenti Keystone , tra cui nome del nodo, ID del nodo, numero di abbonamento, nome della griglia, tipo di nodo e cliente.  È possibile monitorare la capacità dati consumata e disponibile, l'utilizzo della CPU e la capacità dati utilizzabile.

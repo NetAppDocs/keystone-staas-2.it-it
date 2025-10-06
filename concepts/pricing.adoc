@@ -18,7 +18,7 @@ Il servizio di abbonamento NetApp Keystone STaaS con pagamento in base al consum
 
 Keystone ti offre i seguenti servizi di fatturazione:
 
-* È possibile pagare in base alla capacità impegnata di IOPS e latenza per soddisfare diverse esigenze di carico di lavoro.  I diversi livelli di servizio prestazionali (Extreme, Premium, Performance, Standard, Value e Object) consentono di gestire lo storage in base al livello di servizio acquistato.
+* È possibile pagare in base alla capacità impegnata di IOPS e latenza per soddisfare diverse esigenze di carico di lavoro. I diversi livelli di servizio delle prestazioni (Extreme, Premium, Performance, Standard, Value e Object) consentono di gestire lo storage in base al livello di servizio delle prestazioni acquistato.
 * Offre una fatturazione prevedibile per la capacità impegnata e un pagamento in base all'utilizzo per l'utilizzo di capacità variabile (a raffica).
 * È possibile selezionare un prezzo combinato per hardware, sistema operativo principale e supporto a un prezzo di $/TiB.  Per ogni tipo di archiviazione, file, blocco, oggetto o servizio di archiviazione cloud, viene emessa una fattura unica.
 * È possibile selezionare una durata flessibile per i servizi e le opzioni di pagamento, ad esempio mensile, trimestrale o annuale.

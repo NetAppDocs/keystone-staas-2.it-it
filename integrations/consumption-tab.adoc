@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/consumption-tab.html 
-keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp 
+keywords: keystone-aiq, digital advisor keystone, consumption trends, subscriptions, historical data, bluexp, NetApp Console, Console 
 summary: 'Per comprendere l"utilizzo del tuo abbonamento, puoi visualizzare la capacità impegnata, la capacità consumata, la capacità disponibile e altro ancora.' 
 ---
 = Visualizza le tendenze di consumo dei tuoi abbonamenti Keystone
@@ -16,14 +16,14 @@ summary: 'Per comprendere l"utilizzo del tuo abbonamento, puoi visualizzare la c
 [role="lead"]
 Puoi monitorare l'utilizzo del tuo abbonamento visualizzando i dati storici dei tuoi abbonamenti Keystone per un periodo di tempo specifico.  Ciò ti consente di ottenere informazioni preziose sui tuoi modelli di utilizzo.
 
-Puoi visualizzare i dati storici dei tuoi abbonamenti Keystone tramite BlueXP o Digital Advisor:
+Puoi visualizzare i dati storici dei tuoi abbonamenti Keystone tramite la NetApp Console o Digital Advisor:
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.Console NetApp
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Abbonamenti*.
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Abbonamenti*.
 . Selezionare il numero di abbonamento nella colonna *Numero di abbonamento*.
 +
 Verrai reindirizzato alla scheda *Consumo attuale*.
@@ -125,7 +125,7 @@ Il burst è la differenza tra la capacità consumata e la capacità impegnata.  
 
 == Visualizza burst accumulato
 
-È possibile visualizzare l'utilizzo dei dati burst accumulati tramite BlueXP o Digital Advisor.  Se hai selezionato *Accrued burst* dal menu a discesa *Visualizza* nella scheda *Andamento dei consumi* in BlueXP, oppure l'opzione *Accrued burst fatturato* dalla scheda *Andamento dei consumi* in Digital Advisor, puoi visualizzare l'utilizzo dei dati accumulati su base mensile o trimestrale, a seconda del periodo di fatturazione selezionato.  Questi dati sono disponibili per gli ultimi 12 mesi fatturati ed è possibile effettuare ricerche in base all'intervallo di date fino agli ultimi 30 mesi.  I grafici a barre mostrano i dati fatturati e, se l'utilizzo non è ancora stato fatturato, verrà contrassegnato come _In sospeso_ per quel periodo.
+È possibile visualizzare l'utilizzo dei dati burst accumulati tramite la Console o il Digital Advisor.  Se hai selezionato *Accrued burst* dal menu a discesa *Visualizza* nella scheda *Andamento dei consumi* nella Console, oppure l'opzione *Accrued burst fatturato* dalla scheda *Andamento dei consumi* in Digital Advisor, puoi visualizzare l'utilizzo dei dati accumulati su base mensile o trimestrale, a seconda del periodo di fatturazione selezionato. Questi dati sono disponibili per gli ultimi 12 mesi fatturati ed è possibile effettuare ricerche in base all'intervallo di date fino agli ultimi 30 mesi. I grafici a barre mostrano i dati fatturati e, se l'utilizzo non è ancora stato fatturato, verrà contrassegnato come _In sospeso_ per quel periodo.
 
 
 TIP: L'utilizzo burst maturato fatturato viene calcolato per periodo di fatturazione, in base alla capacità impegnata e consumata per un livello di servizio prestazionale.
@@ -142,7 +142,7 @@ Questa funzionalità è disponibile solo in modalità anteprima.  Contatta il tu
 
 == Visualizza l'utilizzo giornaliero dei dati accumulati
 
-È possibile visualizzare l'utilizzo giornaliero dei dati accumulati per un periodo di fatturazione mensile o trimestrale tramite BlueXP o Digital Advisor.  In BlueXP, la tabella *Accrued burst by days* fornisce dati dettagliati, tra cui timestamp, capacità di burst impegnata, consumata e accumulata se si seleziona *Accrued burst* dal menu a discesa *View* nella scheda *Consumer trend*.
+È possibile visualizzare l'utilizzo giornaliero dei dati accumulati per un periodo di fatturazione mensile o trimestrale tramite la Console o il Digital Advisor.  Nella Console, la tabella *Accrued burst by days* fornisce dati dettagliati, tra cui timestamp, capacità di burst impegnata, consumata e accumulata se si seleziona *Accrued burst* dal menu a discesa *View* nella scheda *Consumo trend*.
 
 image:bxp-accrued-burst-days.png["screenshot che mostra la tabella dei burst accumulati per giorni"]
 

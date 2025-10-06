@@ -16,7 +16,7 @@ summary: Visualizza i dettagli della capacità a livello di archiviazione di vol
 [role="lead"]
 Per visualizzare i dettagli della capacità a livello di archiviazione di volumi o oggetti, è possibile accedere alla scheda *Volumi e oggetti* in Digital Advisor.  Per StorageGRID, puoi utilizzare questa scheda per leggere l'utilizzo da parte dei singoli nodi nel tuo ambiente di archiviazione degli oggetti.
 
-Per visualizzare questi dettagli, puoi fare riferimento alla scheda *Risorse* in BlueXP .  Per visualizzare i dettagli di un abbonamento Keystone STaaS specifico, fare riferimento alink:../integrations/assets-tab.html["Visualizza le risorse associate a un abbonamento Keystone"] .  Se desideri visualizzare i dettagli di più abbonamenti Keystone , fai riferimento alink:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"] .
+Per visualizzare questi dettagli, puoi fare riferimento alla pagina *Risorse* nella console NetApp . Per visualizzare i dettagli di un abbonamento Keystone STaaS specifico, fare riferimento alink:../integrations/assets-tab.html["Visualizza le risorse associate a un abbonamento Keystone"] . Se desideri visualizzare i dettagli di più abbonamenti Keystone , fai riferimento alink:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"] .
 
 
 NOTE: Il titolo di questa scheda varia a seconda della natura della distribuzione nel tuo sito.  Se si dispone sia ONTAP sia di archiviazione oggetti, il titolo della scheda verrà visualizzato come *Volumi e oggetti*.  Solo per ONTAP, il nome appare *Volumi*.  Per l'archiviazione di oggetti StorageGRID , è possibile visualizzare la scheda *Oggetti*.
@@ -37,7 +37,7 @@ La scheda *Volumi e oggetti* offre informazioni dettagliate sui volumi del siste
 Per l'abbonamento Keystone STaaS selezionato, è possibile visualizzare il numero totale di volumi, il loro stato di conformità QoS, il conteggio dei volumi protetti e la capacità totale impegnata, consumata e disponibile in tutti quei volumi.  Facendo clic sul numero di volumi non conformi o protetti, si accede alla scheda *Dettagli volume*, in cui è possibile visualizzare un elenco filtrato che mostra i volumi non conformi o quelli protetti, in base alla selezione effettuata.
 
 +
-image:volume-summary-2.png["Scheda Riepilogo volume"]
+image:volume-summary-3.png["Scheda Riepilogo volume"]
 
 
 
@@ -61,7 +61,7 @@ NOTE: Le policy QoS non sono applicabili nella versione 3 Keystone .
 NOTE: Per il servizio aggiuntivo di protezione dati avanzata, viene visualizzata una colonna aggiuntiva per indicare se il volume è primario o mirror nella configurazione MetroCluster .  È possibile copiare i singoli numeri di serie dei nodi facendo clic sul pulsante *Copia numeri di serie dei nodi*.
 
 +
-image:volume-details-3.png["Scheda dettagli volumi"]
+image:volume-details-4.png["Scheda dettagli volumi"]
 
 
 

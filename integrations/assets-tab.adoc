@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/assets-tab.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID, bluexp, volumes in clusters, NetApp Console, Console 
 summary: Utilizzare la scheda Risorse per visualizzare i dettagli dei cluster e dei nodi ONTAP e delle griglie, dei siti e dei nodi StorageGRID gestiti dagli abbonamenti Keystone . 
 ---
 = Visualizza le risorse associate a un abbonamento Keystone
@@ -14,16 +14,16 @@ summary: Utilizzare la scheda Risorse per visualizzare i dettagli dei cluster e 
 
 
 [role="lead"]
-È possibile visualizzare informazioni dettagliate sui cluster e sui nodi ONTAP , nonché sulle griglie, sui siti e sui nodi StorageGRID , gestiti da un singolo abbonamento Keystone .  Questa visualizzazione delle risorse del tuo abbonamento è disponibile nelle viste della dashboard Keystone sia da BlueXP che da Digital Advisor.
+È possibile visualizzare informazioni dettagliate sui cluster e sui nodi ONTAP e sulle griglie, sui siti e sui nodi StorageGRID , gestiti da un singolo abbonamento Keystone .  È possibile accedere a queste risorse di abbonamento nella dashboard Keystone dalla console NetApp o da Digital Advisor.
 
 
 
-== Visualizza le risorse di abbonamento Keystone da BlueXP
+== Visualizza le risorse di abbonamento Keystone dalla console NetApp
 
-La scheda *Risorse* all'interno della scheda *Sottoscrizioni* in BlueXP fornisce informazioni dettagliate sui volumi nei cluster, sui nodi StorageGRID e sui nodi ONTAP associati alla sottoscrizione, inclusi vari dettagli e lo stato della capacità.
+La scheda *Risorse* nella pagina *Sottoscrizioni* mostra informazioni dettagliate sui volumi nei cluster, sui nodi StorageGRID e sui nodi ONTAP associati alla sottoscrizione, inclusi vari dettagli e lo stato della capacità.
 
 
-NOTE: Questa visualizzazione è limitata a un abbonamento Keystone alla volta.  Puoi anche visualizzare le risorse di altri abbonamenti selezionandole dall'elenco a discesa *ID di monitoraggio*.  La dashboard Keystone in BlueXP consente di visualizzare le risorse di più abbonamenti Keystone .  Per saperne di più, fare riferimento alink:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"] .
+NOTE: Questa visualizzazione è limitata a un abbonamento Keystone alla volta. Puoi anche visualizzare le risorse di altri abbonamenti selezionandole dall'elenco a discesa *ID di monitoraggio*. La dashboard Keystone nella console NetApp consente di visualizzare le risorse di più abbonamenti Keystone . Per saperne di più, fare riferimento alink:../integrations/assets.html["Visualizza le risorse nei tuoi abbonamenti Keystone"] .
 
 È possibile visualizzare queste informazioni seguendo questi passaggi:
 
@@ -32,10 +32,10 @@ NOTE: Questa visualizzazione è limitata a un abbonamento Keystone alla volta.  
 .Volumi in cluster
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Abbonamenti*.
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Abbonamenti*.
 . Selezionare il numero di abbonamento nella colonna *Numero di abbonamento* della tabella.
 +
-Verrai reindirizzato alla scheda *Consumo attuale*.
+Il sistema apre la scheda *Consumo attuale*.
 
 . Selezionare la scheda *Risorse*.
 . Selezionare *Volumi nel cluster* dal menu a discesa *Visualizza*.
@@ -55,13 +55,10 @@ TIP: È possibile personalizzare la tabella utilizzando il selettore di colonnai
 .Nodi nei cluster
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Abbonamenti*.
-+
-Per impostazione predefinita, la scheda *Abbonamenti* visualizza la sotto-scheda *Abbonamenti*.
-
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Abbonamenti*.
 . Selezionare il numero di abbonamento nella colonna *Numero di abbonamento* della tabella.
 +
-Verrai reindirizzato alla scheda *Consumo attuale*.
+Il sistema apre la scheda *Consumo attuale*.
 
 . Selezionare la scheda *Risorse*.
 . Selezionare *Nodi nei cluster* dal menu a discesa *Visualizza*.
@@ -81,13 +78,10 @@ TIP: È possibile personalizzare la tabella utilizzando il selettore di colonnai
 .Nodi nelle griglie
 --
 .Passi
-. Dal menu di navigazione a sinistra BlueXP , seleziona *Archiviazione > Keystone > Abbonamenti*.
-+
-Per impostazione predefinita, la scheda *Abbonamenti* visualizza la sotto-scheda *Abbonamenti*.
-
+. Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Abbonamenti*.
 . Selezionare il numero di abbonamento nella colonna *Numero di abbonamento* della tabella.
 +
-Verrai reindirizzato alla scheda *Consumo attuale*.
+Il sistema apre la scheda *Consumo attuale*.
 
 . Selezionare la scheda *Risorse*.
 . Selezionare *Nodi nelle griglie* dal menu a discesa *Visualizza*.
@@ -116,7 +110,7 @@ La scheda *Risorse* della dashboard Keystone in Digital Advisor include due sott
 .ONTAP
 --
 .Passi
-. Fare clic su *Generale > Abbonamenti Keystone > Risorse > ONTAP*.
+. Selezionare *Generale > Abbonamenti Keystone > Risorse > ONTAP*.
 . Selezionare il numero di abbonamento per il quale si desidera visualizzare i cluster.
 +
 Vengono visualizzati i dettagli del cluster, suddivisi in base alle impostazioni di efficienza di archiviazione, al tipo di piattaforma e ai dettagli della capacità.  Facendo clic su uno dei cluster si accede al widget *Clusters* nella schermata Digital Advisor , dove è possibile ottenere informazioni aggiuntive su quel cluster.  Digital Advisor fornisce informazioni complete a livello di inventario sulle tue distribuzioni.
@@ -130,7 +124,7 @@ image:assets-tab-3.png["screenshot per mostrare le informazioni a livello di clu
 .StorageGRID
 --
 .Passi
-. Fare clic su *Generale > Abbonamenti Keystone > Risorse > StorageGRID*.
+. Selezionare *Generale > Abbonamenti Keystone > Risorse > StorageGRID*.
 . Selezionare il numero di abbonamento.
 +
 Vengono visualizzati i dettagli della griglia, categorizzati in base agli identificatori di griglia e nodo, alle informazioni sul sito, alle specifiche hardware e ai dettagli sulla capacità, che aiutano a monitorare e gestire i nodi nell'infrastruttura StorageGRID .

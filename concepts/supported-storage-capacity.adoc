@@ -28,7 +28,7 @@ Si tratta dei dati inseriti nell'infrastruttura Keystone da un cliente.  Tutte l
 
 La capacità logica minima fatturata ogni mese durante l'abbonamento:
 
-* La capacità è garantita per ogni livello di servizio.
+* La capacità è impegnata per ogni livello di servizio prestazionale.
 * Nel corso del periodo è possibile aggiungere capacità impegnata e livelli di servizio aggiuntivi.
 
 
@@ -40,7 +40,7 @@ Durante la durata di un abbonamento, è possibile modificare le capacità impegn
 
 * La capacità impegnata può essere ridotta in base a determinate condizioni.  Per informazioni, vederelink:../concepts/capacity-requirements.html["Riduzione della capacità"] .
 * La capacità impegnata non può essere aumentata 90 giorni prima della scadenza dell'abbonamento, a meno che l'abbonamento non venga rinnovato per un ulteriore periodo di 12 mesi.
-* È possibile richiedere modifiche alla capacità impegnata tramite l'interfaccia BlueXP o tramite il Keystone Success Manager (KSM).  Per informazioni sulla richiesta di modifiche, vederelink:../concepts/gssc.html["Supporto NetApp Keystone"] .
+* Puoi richiedere modifiche alla capacità impegnata tramite la Console o dal tuo Keystone Success Manager (KSM). Per informazioni sulla richiesta di modifiche, vederelink:../concepts/gssc.html["Supporto NetApp Keystone"] .
 
 
 
