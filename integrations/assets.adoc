@@ -50,7 +50,7 @@ TIP: È possibile personalizzare la tabella utilizzando il selettore di colonnai
 . Dal menu di navigazione a sinistra della Console, seleziona *Archiviazione > Keystone > Risorse*.
 . Selezionare la scheda *Volumi in cluster*.
 +
-image:console-volumes-clusters-multiple-sub.png["Uno screenshot dei volumi nei cluster per più abbonamenti"]
+image:console-volumes-clusters-multiple-sub-1.png["Uno screenshot dei volumi nei cluster per più abbonamenti"]
 
 +
 Vengono visualizzate informazioni dettagliate su tutti i volumi nei cluster negli abbonamenti Keystone , tra cui nome del volume, numero di abbonamento, numero di serie del nodo, conformità con i criteri QoS, nome del cluster, nome host e livelli di servizio delle prestazioni.  È possibile monitorare la capacità fornita, l'utilizzo logico e fisico e i dati inattivi.  Riceverai anche una panoramica di:

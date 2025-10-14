@@ -29,16 +29,16 @@ Per visualizzare lo stato di consumo attuale dei tuoi abbonamenti tramite NetApp
 Verrai reindirizzato alla scheda *Consumo attuale*.
 
 +
-image:bxp-current-consumption-graph.png["dettagli del consumo attuale in formato grafico"]
+image:console-current-consumption-graph.png["dettagli del consumo attuale in formato grafico"]
 
 +
 Per l'abbonamento selezionato, è possibile visualizzare i dettagli del consumo in formato tabella o grafico utilizzando l'opzione *Tabella* o *Grafico* dal menu a discesa *Visualizza come*.  Nella vista grafica è possibile visualizzare il consumo attuale per livello di servizio delle prestazioni, inclusa la capacità utilizzata, la capacità fornita, il limite di capacità impegnata e il limite di capacità di picco.
 
 +
-Nella vista tabella puoi vedere dettagli come la capacità massima consumata e i giorni rimanenti fino alla scadenza.  Nell'ambito del monitoraggio dell'utilizzo dell'abbonamento, è possibile visualizzare il nome del livello di servizio delle prestazioni, lo stato del consumo, le capacità impegnate e utilizzate, le capacità fornite e in burst, la capacità disponibile e i volumi.  È possibile personalizzare la tabella utilizzando il selettore di colonnaimage:column-selector.png["icona di selezione della colonna"] icona.
+Nella vista tabella puoi vedere dettagli come la capacità massima consumata e i giorni rimanenti fino alla scadenza. Come parte del monitoraggio dell'utilizzo dell'abbonamento, puoi visualizzare il nome del livello di servizio delle prestazioni, l'utilizzo della capacità, le capacità impegnate e utilizzate, le capacità fornite e di picco, la capacità disponibile e i volumi. È possibile personalizzare la tabella utilizzando il selettore di colonnaimage:column-selector.png["icona di selezione della colonna"] icona.
 
 +
-image:bxp-current-consumption-table.png["dettagli del consumo attuale nel formato tabella"]
+image:console-current-consumption-table.png["dettagli del consumo attuale nel formato tabella"]
 
 
 
