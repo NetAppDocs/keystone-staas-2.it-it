@@ -22,15 +22,15 @@ summary: Installare il software Keystone Collector dal repository software YUM.
 --
 . Accedi tramite SSH al server Keystone Collector ed elevalo a `root` privilegio.
 . Importa la firma pubblica Keystone :
-`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+`# rpm --import https://keystone.netapp.com/repo1/RPM-GPG-NetApp-Keystone-20251020`
 . Verificare che sia stato importato il certificato pubblico corretto controllando l'impronta digitale per Keystone Billing Platform nel database RPM:
 `# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` L'impronta digitale corretta si presenta così:
-`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
+`9297 0DB6 0867 22E7 7646 E400 4493 5CBB C9E9 FEDC`
 . Scarica il `keystonerepo.rpm` file:
-`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
+`curl -O https://keystone.netapp.com/repo1/keystonerepo.rpm`
 . Verificare l'autenticità del file:
 `rpm --checksig -v keystonerepo.rpm` La firma di un file autentico si presenta così:
-`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+`Header V4 RSA/SHA512 Signature, key ID c9e9fedc: OK`
 . Installare il file del repository software YUM:
 `# yum install keystonerepo.rpm`
 . Una volta installato il repository Keystone , installare il pacchetto keystone-collector tramite il gestore pacchetti YUM:
