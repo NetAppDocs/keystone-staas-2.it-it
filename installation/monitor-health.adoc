@@ -103,5 +103,5 @@ Keystone Collector TUI consente di generare pacchetti di supporto e di aggiunger
 `$ keystone-collector-tui`
 . Vai a *Risoluzione dei problemi > Genera pacchetto di supporto*.image:tui-sup-bundl.png["schermo tui"]
 . Una volta generato, viene visualizzata la posizione in cui è salvato il bundle.  Utilizzare FTP, SFTP o SCP per connettersi alla posizione e scaricare il file di registro su un sistema locale.image:tui-sup-bundl-2.png["schermo tui"]
-. Una volta scaricato il file, è possibile allegarlo al ticket di supporto Keystone ServiceNow.  Per informazioni sull'emissione dei biglietti, vederelink:../concepts/gssc.html["Generazione di richieste di servizio"] .
+. Una volta scaricato il file, è possibile allegarlo al ticket di supporto Keystone ServiceNow. Per informazioni sull'emissione dei biglietti, vedere link:../concepts/support-services.html["Generazione di richieste di servizio"].
 

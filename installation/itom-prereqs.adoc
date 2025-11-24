@@ -17,10 +17,19 @@ summary: Prima di poter installare ITOM Collector, i tuoi sistemi devono soddisf
 Prima di installare ITOM Collector, assicurati che i tuoi sistemi siano preparati con il software necessario e soddisfino tutti i prerequisiti richiesti.
 
 .Prerequisiti per la VM del server ITOM Collector:
-* Sistemi operativi supportati: Debian 12, Windows Server 2016, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Amazon Linux 2023 o versioni più recenti di questi sistemi operativi.
+* Sistema operativo supportato:
++
+** Debian 12 o successiva
+** Windows Server 2016 o successivo
+** Ubuntu 20.04 LTS o successivo
+** Red Hat Enterprise Linux (RHEL) 8.x
+** Red Hat Enterprise Linux 9.0 o successivo
+** Amazon Linux 2023 o successivo
 +
 
 NOTE: I sistemi operativi consigliati sono Debian 12, Windows Server 2016 o versioni successive.
+
+
 
 * Requisiti di risorse: i requisiti di risorse della VM in base al numero di nodi NetApp monitorati sono i seguenti:
 +
