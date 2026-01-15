@@ -4,7 +4,7 @@ permalink: rest-api/get-customer-subscriptions.html
 keywords: subscriptions, service levels, customer IDs, keystone, api 
 summary: 'L"API REST Digital Advisor recupera un elenco di tutti gli abbonamenti e livelli di servizio associati al customerID specificato.' 
 ---
-= Ottieni abbonamenti clienti utilizzando l'API REST Digital Advisor
+= Ottieni abbonamenti clienti Keystone utilizzando l'API REST Digital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

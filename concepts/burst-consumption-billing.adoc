@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: La fatturazione di Keystone STaaS si basa sulla capacità di picco, ovvero la capacità da te consumata, in aggiunta alla capacità impegnata del tuo abbonamento. 
 ---
-= Fatturazione basata sul consumo a raffica
+= Comprendere la fatturazione dei consumi a raffica Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

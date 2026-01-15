@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: Il servizio aggiuntivo di suddivisione in livelli dei dati identifica i dati utilizzati meno frequentemente e li suddivide in livelli di archiviazione supportati. 
 ---
-= Scopri di più sulla suddivisione in livelli dei dati
+= Servizio aggiuntivo di tiering dei dati per Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
