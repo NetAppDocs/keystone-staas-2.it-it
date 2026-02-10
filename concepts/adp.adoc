@@ -14,16 +14,11 @@ summary: 'Utilizza il servizio aggiuntivo di protezione dati avanzata per garant
 
 
 [role="lead"]
-Puoi abbonarti al servizio aggiuntivo di protezione dati avanzata con il tuo abbonamento Keystone STaaS.  Questo servizio aggiuntivo utilizza la tecnologia NetApp MetroCluster per garantire un'efficiente protezione dei dati dei carichi di lavoro mission-critical con un Recovery Point Objective (RPO) pari a 0.
+È possibile abbonarsi al servizio aggiuntivo di protezione avanzata dei dati (ADP) con il tuo abbonamento Keystone STaaS. Mentre i servizi Keystone standard includono la protezione dei dati predefinita tramite SnapMirror, SnapVault e Snapshot, questo servizio aggiuntivo utilizza la tecnologia NetApp MetroCluster per garantire un'efficace protezione dei dati dei carichi di lavoro mission-critical con un recovery point objective (RPO) pari a 0.
 
+Il servizio avanzato di protezione dati Keystone può sincronamente mirroring dati su un sito secondario. In caso di disastro presso il sito primario, il sito secondario può subentrare senza alcuna perdita di dati. Questa funzionalità utilizza la configurazione link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] tra due siti per abilitare la protezione dei dati. Puoi utilizzare i servizi aggiuntivi di protezione dati avanzata solo per i tuoi servizi di file e storage a blocchi. Come parte di questo servizio aggiuntivo, il livello di servizio  `Advanced Data-Protect` performance viene assegnato al tuo abbonamento.
 
-NOTE: I servizi standard Keystone STaaS per l'archiviazione di file e blocchi offrono servizi di protezione dei dati predefiniti utilizzando tecnologie NetApp , come SnapMirror, SnapVault e Snapshot.
-
-Per informazioni sul servizio standard e cloud, vederelink:../concepts/supported-storage-services.html["Servizi STaaS Keystone"] .
-
-Il servizio avanzato di protezione dei dati Keystone può eseguire il mirroring sincrono dei dati su un sito secondario.  In caso di disastro nel sito primario, il sito secondario può subentrare, senza alcuna perdita di dati.  Questa funzionalità sfrutta l'link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] configurazione tra due siti per abilitare la protezione dei dati.  È possibile utilizzare i servizi aggiuntivi di protezione dati avanzata solo per i servizi di archiviazione file e a blocchi.  Come parte di questo servizio aggiuntivo, il `Advanced Data-Protect` al tuo abbonamento viene assegnato il livello di servizio delle prestazioni.
-
-Per informazioni su come visualizzare il consumo in una configurazione MetroCluster , vederelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Grafici di riferimento per la protezione avanzata dei dati"] .
+È possibile monitorare il consumo e le metriche di salute per la configurazione MetroCluster. Per ulteriori informazioni, consultare link:../integrations/adp-tab.html["Visualizza il consumo e lo stato dei tuoi abbonamenti MetroCluster"].
 
 
 
@@ -31,7 +26,7 @@ Per informazioni su come visualizzare il consumo in una configurazione MetroClus
 
 Il prezzo del servizio aggiuntivo di protezione avanzata dei dati è calcolato in base alla capacità impegnata in ogni sito.  Ciò aiuta a determinare il costo effettivo del servizio avanzato di protezione dei dati in $/TiB. I costi aggiuntivi si applicano a tutte le capacità del tuo abbonamento, inclusi i dati sorgente, le copie speculari e i dati non speculari.
 
-Per la configurazione MetroCluster , ogni sito richiede il proprio abbonamento e ti verrà addebitata la capacità impegnata in modo indipendente su ogni sito.  Per informazioni sulla fatturazione, fare riferimento alink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Fatturazione per la protezione avanzata dei dati"] .
+Per la configurazione MetroCluster, ogni sito richiede un proprio abbonamento e ti verrà addebitata la capacità impegnata in modo indipendente su ogni sito.
 
 Notare quanto segue:
 
@@ -40,6 +35,38 @@ Notare quanto segue:
 * I costi si applicano solo ai servizi di archiviazione file e a blocchi.
 
 
-Sono supportati i seguenti scenari MetroCluster :
 
-image:mcc-1.png["Configurazioni MetroCluster supportate da Keystone"]
+
+== Configurazioni MetroCluster supportate
+
+Keystone supporta i seguenti scenari di distribuzione MetroCluster:
+
+Configurazione attiva/passiva:: In questa configurazione, i dati primari di un sito vengono mirrorati su un sito secondario. Ad esempio, se 100 TiB di dati logici vengono consumati nel sito A, questi vengono replicati nel sito B. Entrambi i siti richiedono abbonamenti identici:
++
+--
+* *Abbonamento 1 (sito A):* 100 TiB storage service + 100 TiB ADP
+* *Abbonamento 2 (sito B):* 100 TiB storage service + 100 TiB ADP
+
+
+--
+Configurazione Active/Active con mirroring completo:: In questa configurazione, entrambi i siti ospitano dati primari che vengono mirrorati bidirezionalmente. Ad esempio, 100 TiB di dati primari del sito A vengono mirrorati sul sito B e 100 TiB di dati primari del sito B vengono mirrorati sul sito A. Entrambi i siti richiedono abbonamenti per la capacità combinata:
++
+--
+* *Abbonamento 1 (sito A):* 200 TiB storage service + 200 TiB ADP
+* *Abbonamento 2 (sito B):* 200 TiB storage service + 200 TiB ADP
+
+
+--
+Configurazione Active/Active con mirroring parziale:: In questa configurazione, un sito ospita dati mirrorati mentre l'altro sito ospita sia dati mirrorati che non mirrorati. Ad esempio, 100 TiB di dati primari presso il sito A sono mirrorati sul sito B, mentre il sito B ospita anche ulteriori 100 TiB di dati non mirrorati. Gli abbonamenti variano in base alla capacità di ciascun sito:
++
+--
+* *Abbonamento 1 (sito A):* 100 TiB storage service + 100 TiB ADP
+* *Abbonamento 2 (sito B):* 200 TiB storage service + 200 TiB ADP
+
+
+--
+
+
+Il diagramma seguente mostra queste configurazioni MetroCluster supportate:
+
+image:mcc-1.png["Diagramma che mostra tre configurazioni MetroCluster: Attivo/Passivo con mirroring simmetrico, Attivo/Attivo con mirroring bidirezionale completo e Attivo/Attivo con mirroring parziale"]

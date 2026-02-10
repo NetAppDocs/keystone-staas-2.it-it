@@ -117,6 +117,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: Visualizza la cronologia del tuo abbonamento
         url: "/integrations/subscription-timeline.html"
+      - title: Visualizza consumo e stato di salute degli abbonamenti MetroCluster
+        url: "/integrations/adp-tab.html"
     - title: Visualizza risorse
       entries:
       - title: Visualizza le risorse associate a un abbonamento
@@ -129,8 +131,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: Visualizza e crea monitor di avviso
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: Modifica i tuoi abbonamenti
-      url: "/integrations/modify-subscription.html"
     - title: Visualizza la tua richiesta di servizio
       url: "/integrations/administration-tab.html"
     - title: Visualizza i dettagli dei volumi e dell'archiviazione degli oggetti

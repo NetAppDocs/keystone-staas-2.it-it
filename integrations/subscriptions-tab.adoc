@@ -34,7 +34,7 @@ Vengono visualizzate le metriche chiave, quali l'utilizzo della capacità, lo st
 Nella tabella è possibile visualizzare i seguenti dettagli:
 
 +
-** *Numero di abbonamento*: il numero di abbonamento Keystone assegnato da NetApp.
+** *Numero di abbonamento*: il numero di abbonamento Keystone assegnato da NetApp. Gli abbonamenti con l'icona image:metrocluster-icon.png["Simbolo di abbonamento MetroCluster"] sono abbonamenti MetroCluster. Per ulteriori informazioni sugli abbonamenti MetroCluster, consultare link:../integrations/adp-tab.html["Visualizza il consumo e lo stato delle tue sottoscrizioni Keystone MetroCluster"].
 ** *ID di tracciamento*: ID di tracciamento assegnato al momento dell'attivazione dell'abbonamento.  Si tratta di un ID univoco per ogni abbonamento e sito, utilizzato per tracciare l'abbonamento.
 ** *Nome del cliente*: il nome del cliente associato all'abbonamento Keystone .
 ** *Abbonamenti collegati*: se hai abbonamenti secondari collegati al tuo abbonamento principale, questa colonna elenca i numeri degli abbonamenti collegati per l'abbonamento principale.  Questo numero di abbonamento può essere quello del tuo abbonamento primario o secondario (collegato).
@@ -78,7 +78,7 @@ Per determinati campi e colonne, potrebbero essere visualizzate icone informativ
 ** *ID di tracciamento*: ID di tracciamento assegnato al momento dell'attivazione dell'abbonamento.  Si tratta di un ID univoco per ogni abbonamento e sito.
 +
 
-TIP: Se hai sottoscritto un abbonamento al servizio aggiuntivo di protezione dati avanzata, puoi fare clic sulla descrizione comandi accanto al numero di abbonamento per visualizzare l'ID di tracciamento dell'abbonamento del partner in una configurazione MetroCluster .  Per visualizzare il consumo dettagliato per abbonamento partner in una configurazione MetroCluster , vederelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Grafici di riferimento per la protezione avanzata dei dati"] .
+TIP: Se hai sottoscritto un abbonamento al servizio aggiuntivo di protezione avanzata dei dati, puoi cliccare sulla descrizione comandi accanto al tuo numero di abbonamento per visualizzare l'ID di tracciamento dell'abbonamento partner in una configurazione MetroCluster. Per visualizzare il consumo dettagliato per abbonamento partner in una configurazione MetroCluster, consulta link:../integrations/adp-tab.html["Visualizza consumo e stato di salute degli abbonamenti MetroCluster"].
 
 ** *Tipo di utilizzo*: Potresti esserti abbonato a più versioni Keystone .  Le regole del piano tariffario per i livelli di servizio delle prestazioni possono variare a seconda delle versioni di abbonamento.  Osservando il valore in questa colonna, è possibile sapere se il tipo di utilizzo viene fatturato in base all'utilizzo previsto, fisico o logico.  Per saperne di più sulla versione 1, fare riferimento a https://docs.netapp.com/us-en/keystone/index.html["Servizi di abbonamento Keystone | Documentazione della versione 1"^] .
 ** *Periodo di fatturazione*: il periodo di fatturazione dell'abbonamento.

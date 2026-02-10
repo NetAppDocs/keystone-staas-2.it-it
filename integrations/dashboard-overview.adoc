@@ -47,8 +47,7 @@ Scopri di più sulink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-o
 
 Notare quanto segue:
 
-* Sebbene la Console e il Digital Advisor offrano alcune funzionalità esclusive, la Console fornisce funzionalità amministrative per Keystone, consentendo di gestire gli abbonamenti e apportare le modifiche necessarie.
-* Per modificare gli abbonamenti è necessario essere assegnati al ruolo di * amministratore Keystone *. Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console NetApp"^] .
+* Sebbene la Console e Digital Advisor offrano alcune funzionalità esclusive, la Console fornisce funzionalità amministrative per Keystone, consentendo di gestire gli abbonamenti e apportare le modifiche necessarie. Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Ruoli di accesso Keystone nella NetApp Console"^].
 * Digital Advisor è integrato con la Console, consentendoti di accedere a tutte le funzionalità Digital Advisor , inclusa la dashboard Keystone , direttamente dalla Console. Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-console.html#netapp-console["Integrazione Digital Advisor con NetApp Console"^] .
 
 
@@ -93,11 +92,6 @@ link:../integrations/monitoring-alerts.html["Visualizza e gestisci avvisi e moni
 
 
  a| 
-link:../integrations/modify-subscription.html["Modifica i tuoi abbonamenti"](solo per gli amministratori Keystone )
-| SÌ | NO 
-
-
- a| 
 link:../integrations/options.html#generate-reports-from-netapp-console-or-digital-advisor["Generare report"]
 | SÌ | SÌ 
 
@@ -105,6 +99,11 @@ link:../integrations/options.html#generate-reports-from-netapp-console-or-digita
  a| 
 link:../integrations/volumes-objects-tab.html["Visualizza i dettagli dei volumi e degli oggetti"]
 | SÌ | SÌ 
+
+
+ a| 
+link:../integrations/adp-tab.html["Visualizza il consumo e lo stato di integrità di MetroCluster"]
+| Sì (include stato di integrità, visualizzazione della topologia e monitoraggio della sincronizzazione) | Sì (solo dati di consumo) 
 
 
  a| 
