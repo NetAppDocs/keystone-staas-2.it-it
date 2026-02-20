@@ -16,7 +16,7 @@ summary: In qualità di abbonato a NetApp Keystone STaaS, puoi ottenere una pano
 [role="lead"]
 La dashboard Keystone è la soluzione ideale per monitorare, analizzare e gestire in modo efficiente i tuoi abbonamenti Keystone .  Attraverso la dashboard Keystone è possibile raggiungere i seguenti obiettivi:
 
-* *Monitoraggio dei dettagli dell'abbonamento*: visualizza informazioni dettagliate sui tuoi abbonamenti Keystone , inclusi livelli di servizio delle prestazioni, utilizzo della capacità, risorse e avvisi.
+* *Monitor subscription details*: visualizza informazioni dettagliate sui tuoi abbonamenti Keystone, inclusi i livelli di servizio delle prestazioni (servizi di base e aggiuntivi come protezione avanzata dei dati e Data Infrastructure Insights), utilizzo della capacità, risorse e avvisi.
 * *Monitorare l'utilizzo della capacità e generare report*: tenere traccia dell'utilizzo attuale e storico della capacità e generare report per analizzare i dati degli abbonamenti e prendere decisioni informate.
 * *Visualizza la cronologia degli abbonamenti*: rimani informato sulle date e gli eventi più importanti monitorando la cronologia dei tuoi abbonamenti.
 * *Gestisci abbonamenti*: invia richieste per modificare i livelli di servizio delle prestazioni o altri parametri di abbonamento in base alle tue esigenze.
