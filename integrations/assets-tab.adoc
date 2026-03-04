@@ -47,7 +47,11 @@ Il sistema apre la scheda *Consumo attuale*.
 image:bxp-volumes-clusters-single-subscription-1.png["Uno screenshot dei volumi nei cluster per un abbonamento"]
 
 +
-Vengono visualizzate informazioni dettagliate sui volumi nei cluster, tra cui il nome del volume, il numero di serie del nodo, la conformità con i criteri QoS, il nome del cluster, il nome host e i livelli di servizio delle prestazioni.  È inoltre possibile monitorare la capacità fornita, l'utilizzo logico e fisico e i dati inattivi.
+Vengono visualizzate informazioni dettagliate sui volumi nei cluster, tra cui nome del volume, numero di serie del nodo, conformità con le policy QoS, nome del cluster, host name e livelli di servizio delle prestazioni. È inoltre possibile monitorare la capacità fornita, l'utilizzo logico e fisico, i dati cold e i dati hot.
+
++
+
+NOTE: Le colonne *Cold tier %* e *Hot tier %* mostrano la percentuale di dati su ciascun tier, calcolata come (Cold data / Total footprint) × 100 e (Hot data / Total footprint) × 100 rispettivamente.
 
 +
 
