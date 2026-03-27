@@ -66,7 +66,7 @@ NOTE: L'intervallo di date selezionato determina il livello di dettaglio mostrat
 
 NOTE: È possibile selezionare *Burst maturato fatturato* se si desidera visualizzare i dati storici di utilizzo del burst per cui sono state generate fatture.  Puoi utilizzare questi dati per analizzare l'utilizzo fatturato riportato nella tua fattura.  Per saperne di più, fare riferimento alink:../integrations/consumption-tab.html#view-accrued-burst["Visualizza burst accumulato"] .
 
-. Selezionare l'intervallo di tempo dalle icone del calendario nei campi *Data di inizio* e *Data di fine*.  Seleziona l'intervallo di date per la query.  L'intervallo di date può essere l'inizio del mese o la data di inizio dell'abbonamento fino alla data corrente o alla data di fine dell'abbonamento.  Non è possibile selezionare una data futura.
+. Seleziona l'intervallo di tempo dalle icone del calendario nei campi *From Date* e *To Date*. Per impostazione predefinita, l'intervallo di date è gli ultimi 30 giorni a partire da oggi. Puoi modificare questo intervallo, ma non puoi selezionare una data futura.
 +
 
 TIP: Per prestazioni e un'esperienza utente ottimali, limita l'intervallo di date della tua query a tre mesi.
@@ -74,6 +74,10 @@ TIP: Per prestazioni e un'esperienza utente ottimali, limita l'intervallo di dat
 . Fare clic su *Visualizza dettagli*.  I dati storici sui consumi dell'abbonamento per ciascun livello di servizio prestazionale vengono visualizzati in base all'intervallo di tempo selezionato.
 +
 I grafici a barre mostrano il nome del livello di servizio delle prestazioni e la capacità consumata rispetto a tale livello di servizio delle prestazioni per l'intervallo di date.  La data e l'ora della raccolta vengono visualizzate nella parte inferiore del grafico.  In base all'intervallo di date della query, i grafici di utilizzo vengono visualizzati in un intervallo di 30 punti di raccolta dati.  È possibile passare il cursore del mouse sui grafici per visualizzare la ripartizione dell'utilizzo in termini di dati impegnati, consumati, in raffica e oltre il limite di raffica in quel punto di raccolta dati.
+
++
+
+NOTE: Se si seleziona un intervallo di date inferiore a 30 giorni, il grafico visualizza un punto di raccolta di dati al giorno solo per i giorni selezionati. Ad esempio, un intervallo di 4 giorni mostra 4 punti di raccolta di dati, non 30. Solo la data viene mostrata in fondo al grafico per qualsiasi intervallo selezionato. I timestamp sono visibili solo quando si ingrandisce il grafico utilizzando la funzione di zoom descritta di seguito.
 
 +
 I grafici a barre mostrano raffiche a breve termine, che è possibile visualizzare utilizzando la funzione di zoom.  Quando è presente un burst a breve termine, questo viene indicato da un punto blu sulla barra corrispondente o direttamente sull'asse x se non vengono consumati dati.  Per visualizzare i dettagli, fare clic e tenere premuto sulla barra o sull'asse x in cui appare il punto blu, quindi trascinare il cursore sul grafico per selezionare l'intervallo di tempo desiderato e rilasciare per confermare la selezione.  Questa azione consente di ingrandire i dati, fornendo una visione più dettagliata della capacità utilizzata a quel livello di servizio prestazionale per l'intervallo selezionato.  È possibile fare clic sul pulsante *Reimposta zoom* per tornare alla visualizzazione originale del grafico.
