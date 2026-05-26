@@ -24,6 +24,15 @@ Sono stati segnalati i seguenti problemi noti in NetApp Keystone STaaS:
 
 
  a| 
+Data di scadenza errata per gli abbonamenti scaduti
+ a| 
+Nella scheda *Abbonamenti*, gli abbonamenti scaduti mostrano la data di ieri come data di scadenza anziché la data effettiva di fine dell'abbonamento.
+ a| 
+Nessuno
+
+
+
+ a| 
 Dati di previsione dei consumi con tendenza al ribasso inaccurata
  a| 
 Nella scheda *Andamento dei consumi*, quando l'interruttore *Previsione* è abilitato nella vista *Consumo storico*, l'utilizzo previsto della capacità mostra una tendenza al ribasso significativa e inaccurata.
