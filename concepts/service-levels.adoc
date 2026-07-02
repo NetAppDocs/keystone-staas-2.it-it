@@ -14,7 +14,7 @@ summary: Keystone STaaS offre capacità di archiviazione a livelli di servizio p
 
 
 [role="lead"]
-Keystone STaaS offre capacità di archiviazione dati a livelli di servizio prestazionali predefiniti.  A ciascun volume gestito dai servizi Keystone è associato un livello di servizio prestazionale.
+Keystone STaaS offre livelli di servizio di prestazioni (PSL) predefiniti, anche chiamati livelli di servizio di prestazioni di base, per ogni tipo di storage. Ogni PSL specifica gli obiettivi di prestazioni (IOPS, throughput e latenza), i protocolli supportati, la piattaforma e i requisiti minimi di capacità. Esamina i PSL disponibili per scegliere il livello di servizio giusto per il tuo carico di lavoro e pianificare il tuo abbonamento.
 
 Un abbonamento può avere più piani tariffari e ogni piano tariffario corrisponde a un livello di servizio prestazionale.  Ogni piano tariffario prevede una capacità impegnata per livello di servizio prestazionale.
 
