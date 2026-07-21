@@ -32,6 +32,7 @@ Per informazioni sui livelli di servizio delle prestazioni, vederelink:../concep
 
 
 
+[[snaplock-compliance]]
 == Conformità SnapLock
 
 La tecnologia SnapLock abilita la funzionalità NRNVC rendendo l'unità inutilizzabile dopo la data di scadenza impostata nel volume.  Per utilizzare la tecnologia SnapLock sui tuoi volumi, devi abbonarti a NRNVC.  Ciò è applicabile solo ai servizi di file e blocchi.

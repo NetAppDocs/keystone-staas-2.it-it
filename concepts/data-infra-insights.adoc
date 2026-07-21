@@ -20,6 +20,7 @@ Per saperne di più su Data Infrastructure Insights, fare riferimento alink:http
 
 
 
+[[about-dii-for-keystone-subscriptions]]
 == Informazioni su DII per gli abbonamenti Keystone
 
 DII è disponibile sia per gli abbonamenti nuovi che per quelli esistenti. Può essere integrato in un abbonamento Keystone come componente aggiuntivo per la capacità impegnata.
@@ -28,6 +29,7 @@ Quando DII è integrato in un abbonamento Keystone, avrà un livello di servizio
 
 
 
+[[deployment-of-dii-for-keystone]]
 == Distribuzione di DII per Keystone
 
 I clienti possono integrare DII per Keystone in due modi: come parte di un'istanza esistente che monitora altri ambienti non Keystone oppure come parte di una nuova istanza.  L'impostazione del DII è responsabilità del cliente.  Se è necessario aiuto per impostare DII in un ambiente complesso, il team dell'account può coinvolgerelink:https://www.netapp.com/services/["Servizi professionali NetApp"^] .
@@ -62,6 +64,7 @@ NOTE: Sebbene DII offra ampie capacità di monitoraggio per l'hardware distribui
 
 
 
+[[view-dii-consumption]]
 == Visualizza il consumo DII
 
 Puoi visualizzare il consumo dei tuoi servizi aggiuntivi DII tramite la NetApp Console o Digital Advisor. I dati sul consumo per i livelli di servizio DII Performance (come DII Extreme, DII Premium e DII Performance) vengono visualizzati insieme ai livelli di servizio di base nelle viste di consumo attuale e trend di consumo.
@@ -82,6 +85,7 @@ Per ulteriori informazioni sulla visualizzazione del consumo, vedere:
 
 
 
+[[billing-and-metering]]
 == Fatturazione e misurazione
 
 Di seguito sono riportati i dettagli di fatturazione e misurazione del servizio aggiuntivo DII:
@@ -94,6 +98,7 @@ Di seguito sono riportati i dettagli di fatturazione e misurazione del servizio 
 
 
 
+[[support-and-user-access]]
 == Supporto e accesso utente
 
 I membri approvati del team di supporto NetApp possono accedere all'istanza DII del cliente se il cliente abilita l'opzione *Consenti a NetApp di accedere al tuo ambiente Data Infrastructure Insights *.  Per farlo, vai su *Aiuto > Supporto* e abilita l'opzione.

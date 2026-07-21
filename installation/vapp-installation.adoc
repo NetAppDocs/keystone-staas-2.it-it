@@ -18,6 +18,7 @@ La distribuzione Keystone Collector sui sistemi VMware vSphere include il downlo
 
 
 
+[[deploying-the-ova-template]]
 == Distribuzione del modello OVA
 
 Segui questi passaggi:
@@ -59,6 +60,7 @@ Dopo aver distribuito la VM dal modello e averla accesa, aprire una sessione SSH
 
 
 
+[[initial-system-configuration]]
 == Configurazione iniziale del sistema
 
 Per una configurazione iniziale dei server Keystone Collector distribuiti tramite OVA, eseguire questi passaggi sui sistemi VMware vSphere:

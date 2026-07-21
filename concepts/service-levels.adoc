@@ -29,6 +29,7 @@ I livelli di servizio delle prestazioni di base per i tipi di archiviazione supp
 
 
 
+[[performance-service-levels-for-file-and-block-storage]]
 == Livelli di servizio prestazionali per l'archiviazione di file e blocchi
 
 *Protocolli supportati*: NFS, CIFS, iSCSI e FC
@@ -61,6 +62,7 @@ I livelli di servizio delle prestazioni di base per i tipi di archiviazione supp
 |===
 
 
+[[more-on-performance-service-levels-for-file-and-block-storage]]
 === Ulteriori informazioni sui livelli di servizio delle prestazioni per l'archiviazione di file e blocchi
 
 Le metriche del livello di servizio delle prestazioni di base dipendono dalle seguenti condizioni:
@@ -84,6 +86,7 @@ Le metriche del livello di servizio delle prestazioni di base dipendono dalle se
 
 
 
+[[object-storage]]
 == Archiviazione di oggetti
 
 *Protocollo supportato*: S3
@@ -113,6 +116,7 @@ NOTE: La latenza non include i costi generali associati al trasferimento dei dat
 
 
 
+[[cloud-storage]]
 == Archiviazione cloud
 
 *Protocollo supportato*: NFS, CIFS, iSCSI e S3 (solo AWS e Azure)

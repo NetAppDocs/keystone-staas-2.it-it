@@ -18,12 +18,14 @@ NetApp garantisce il recupero dei dati Snapshot dai volumi SnapLock Compliance i
 
 
 
+[[service-levels]]
 == Livelli di servizio
 
 Il servizio Ransomware Recovery Assurance è obbligatorio per tutto l'hardware che supporta l'abbonamento Keystone per la durata del periodo di abbonamento applicabile.
 
 
 
+[[service-credits]]
 == Crediti di servizio
 
 

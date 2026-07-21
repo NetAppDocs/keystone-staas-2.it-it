@@ -23,6 +23,7 @@ NOTE: Il titolo di questa scheda varia a seconda della natura della distribuzion
 
 
 
+[[view-ontap-volumes-and-object-storage-details]]
 == Visualizza i volumi ONTAP e i dettagli di archiviazione degli oggetti
 
 La scheda *Volumi e oggetti* offre informazioni dettagliate sui volumi del sistema ONTAP e sull'archiviazione degli oggetti a diversi livelli di dettaglio.  Per i volumi ONTAP , sono presenti due sotto-schede: *Riepilogo volume*, che fornisce un conteggio complessivo dei volumi mappati ai livelli di servizio delle prestazioni sottoscritti, e *Dettagli volume*, che elenca nuovamente questi volumi con i loro dettagli specifici.  La sotto-scheda *Oggetti* fornisce dettagli sull'archiviazione degli oggetti per gli abbonamenti che includono livelli di servizio di prestazioni sia per l'archiviazione di file che per quella di oggetti.

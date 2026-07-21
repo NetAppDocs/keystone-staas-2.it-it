@@ -32,6 +32,7 @@ Keystone fornisce capacità di archiviazione a livelli di servizio prestazionali
 
 
 
+[[keystone-storage-as-a-service-staas]]
 == Keystone Storage-as-a-service (STaaS)
 
 Le offerte Storage-as-a-service (STaaS) mirano a fornire un modello simile al cloud pubblico per l'approvvigionamento, l'implementazione e la gestione dell'infrastruttura di storage.  Mentre molte aziende stanno ancora lavorando alla propria strategia per il cloud ibrido, Keystone STaaS offre la flessibilità di iniziare con servizi on-premise e passare al cloud quando sarà il momento giusto.  Ciò garantisce la protezione dei propri impegni su diversi modelli di distribuzione, ridistribuendo le spese in base alle esigenze senza aumentare la bolletta mensile.

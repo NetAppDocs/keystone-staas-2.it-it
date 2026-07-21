@@ -18,6 +18,7 @@ NetApp Keystone fornisce una misurazione garantita del numero massimo di watt ef
 
 
 
+[[metrics]]
 == Metrica
 
 * *Watt*: il consumo energetico segnalato da AutoSupport giornaliero, incluso l'utilizzo da parte del controller e degli scaffali dei dischi collegati.
@@ -34,6 +35,7 @@ Per saperne di più sul rapporto di efficienza di archiviazione, fare riferiment
 
 
 
+[[performance-service-levels]]
 == Livelli di servizio prestazionali
 
 La sostenibilità SLO si basa sui seguenti criteri di consumo:
@@ -62,6 +64,7 @@ Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keysto
 
 
 
+[[service-credits]]
 == Crediti di servizio
 
 
@@ -95,6 +98,7 @@ da 3 a 7
 |===
 
 
+[[service-credit-request]]
 === Richiesta di credito per il servizio
 
 Se viene rilevata una violazione dell'SLA, aprire un ticket di supporto con priorità 3 (P3) con l'assistenza NetApp Keystone e fornire i dettagli richiesti nel foglio Excel mostrato di seguito:

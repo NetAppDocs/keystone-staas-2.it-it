@@ -18,6 +18,7 @@ L'SLO di disponibilità punta a un uptime del 99,999% durante un periodo di fatt
 
 
 
+[[metrics]]
 == Metrica
 
 * *Percentuale di uptime mensile* = [(numero di secondi idonei in un mese - media del numero di secondi di inattività per tutti gli array di storage AFF distribuiti per consegnare l'ordine Keystone in quel mese) / numero di secondi idonei in un mese] x 100%
@@ -27,12 +28,14 @@ L'SLO di disponibilità punta a un uptime del 99,999% durante un periodo di fatt
 
 
 
+[[performance-service-levels]]
 == Livelli di servizio prestazionali
 
 Tutti i livelli di servizio prestazionali supportati dagli array di storage flash ONTAP sono idonei per l'Availability SLO.  Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Livelli di servizio prestazionali a Keystone"] .
 
 
 
+[[service-credits]]
 == Crediti di servizio
 
 
@@ -73,6 +76,7 @@ Se la disponibilità di array di storage flash ONTAP per gli abbonamenti idonei 
 |===
 
 
+[[service-credit-calculation]]
 === Calcolo del credito di servizio
 
 I crediti di servizio vengono determinati utilizzando la seguente formula:
@@ -125,6 +129,7 @@ In base al calcolo, i crediti per il servizio ammonteranno a 5 $.
 
 
 
+[[service-credit-request]]
 === Richiesta di credito per il servizio
 
 Se viene rilevata una violazione dell'SLA, aprire un ticket di supporto con priorità 3 (P3) con il supporto NetApp Keystone .

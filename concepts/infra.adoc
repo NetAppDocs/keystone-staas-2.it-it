@@ -32,12 +32,14 @@ L'infrastruttura Keystone comprende molteplici componenti, tra cui:
 
 
 
+[[storage-platforms]]
 == Piattaforme di stoccaggio
 
 Le applicazioni aziendali necessitano di piattaforme di storage per supportare flussi di lavoro di provisioning rapidi, mantenere una disponibilità continua, sostenere carichi di lavoro elevati con bassa latenza, offrire prestazioni più elevate e supportare l'integrazione con i principali provider cloud.  NetApp dispone di diversi prodotti e tecnologie per supportare questi requisiti.  Per il servizio Keystone , NetApp utilizza i sistemi AFF, ASA, FAS e StorageGRID .
 
 
 
+[[monitoring-tools]]
 == Strumenti di monitoraggio
 
 In un servizio Keystone gestito dal cliente, l'infrastruttura di storage e gli strumenti di monitoraggio vengono installati presso la tua sede.  L'infrastruttura di archiviazione è costituita dall'hardware di archiviazione necessario per supportare l'ordine iniziale, con la possibilità di ordinare ulteriore spazio di archiviazione in un secondo momento.
