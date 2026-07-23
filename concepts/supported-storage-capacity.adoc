@@ -21,7 +21,7 @@ Il servizio NetApp Keystone STaaS supporta diversi tipi di capacità di archivia
 [[logical-capacity]]
 == Capacità logica
 
-Si tratta dei dati inseriti nell'infrastruttura Keystone da un cliente.  Tutte le capacità Keystone fanno riferimento a una capacità logica.  Ad esempio, se un file da 1 TiB è archiviato sull'infrastruttura Keystone , è necessario acquistare una capacità minima di 1 TiB.
+Si tratta della quantità di capacità di archiviazione necessaria per memorizzare i dati dell'utente prima che vengano applicate le efficienze dei dati offerte dallo storage array.
 
 
 

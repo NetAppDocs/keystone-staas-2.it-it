@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">Scopri i tipi di capacità di archiviazione supportati dal servizio NetApp Keystone STaaS per la versione 2.</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">Il servizio NetApp Keystone STaaS supporta diversi tipi di capacità di archiviazione.  La comprensione di questi diversi termini di capacità può essere utile durante l'utilizzo Keystone.</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">Capacità logica</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">Si tratta dei dati inseriti nell'infrastruttura Keystone da un cliente.  Tutte le capacità Keystone fanno riferimento a una capacità logica.  Ad esempio, se un file da 1 TiB è archiviato sull'infrastruttura Keystone , è necessario acquistare una capacità minima di 1 TiB.</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">Capacità impegnata</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">La capacità logica minima fatturata ogni mese durante l'abbonamento:</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">Nel corso del periodo è possibile aggiungere capacità impegnata e livelli di servizio aggiuntivi.</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*Grigio*: L'abbonamento è scaduto.</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">Per gli abbonamenti con rinnovo automatico attivo, viene visualizzata un'icona di rinnovo automatico che indica che l'abbonamento si rinnoverà automaticamente al termine del periodo corrente.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20 luglio 2026</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">Si tratta della quantità di capacità di archiviazione necessaria per memorizzare i dati dell'utente prima che vengano applicate le efficienze dei dati offerte dallo storage array.</block>
 </blocks>
