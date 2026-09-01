@@ -80,4 +80,4 @@ Supporto
 
 | image:check.png["segno di spunta"] | Nessuno 
 |===
-Per maggiori informazioni sulla distribuzione, vederelink:../concepts/infra.html["Infrastruttura Keystone"] Elink:..//concepts/components.html["Componenti per la distribuzione"] .
+Per ulteriori informazioni sulla distribuzione, vedi link:../concepts/infra.html["Scopri l'infrastruttura Keystone"] e link:..//concepts/components.html["Componenti necessari per i servizi Keystone"].

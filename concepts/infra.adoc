@@ -4,7 +4,7 @@ permalink: concepts/infra.html
 keywords: keystone infrastructure, infra 
 summary: 'L"infrastruttura Keystone , la progettazione, la scelta della tecnologia e i prodotti componenti sono di esclusiva proprietà di NetApp.' 
 ---
-= Comprendere l'infrastruttura Keystone
+= Scopri l'infrastruttura Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

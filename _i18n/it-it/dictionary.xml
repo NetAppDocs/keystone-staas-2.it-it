@@ -276,7 +276,6 @@
   <block id="c072efe8294d1003e257c7dd4fe0687d" category="inline-image-macro">flusso di dati del collettore</block>
   <block id="92c812556434526899af3c97a106a849" category="paragraph"><block ref="92c812556434526899af3c97a106a849" category="inline-image-macro-rx" type="image"></block></block>
   <block id="661dc0732c9608cbd4ce15e65f4cc30c" category="summary">Il servizio NetApp Keystone STaaS utilizza diversi termini per misurare le metriche.  Potresti voler approfondire l'argomento mentre utilizzi Keystone per la versione 2 del servizio.</block>
-  <block id="e38b5058398d45181914283e348c4f38" category="doc">Metriche e definizioni utilizzate in Keystone</block>
   <block id="96528977c8366dbda111370e25501602" category="paragraph">Il servizio NetApp Keystone STaaS utilizza diversi termini per misurare le metriche.  Potresti voler approfondire l'argomento utilizzando Keystone.</block>
   <block id="3a79a2a5d18c98a3e6880bfa3a826f9f" category="paragraph">I seguenti termini e definizioni vengono utilizzati all'interno del servizio Keystone STaaS per misurare le metriche:</block>
   <block id="c7c1919c4fd61189792daac01aa326b5" category="list-text">Densità IO: IOPS/TiB: numero di operazioni di input/output elaborate al secondo in base allo spazio totale consumato dal carico di lavoro, in tebibyte.</block>
@@ -385,8 +384,6 @@
   <block id="550340cfbad3ac61a634336458de3119" category="list-text">Riparazione guasti hardware</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">Supporto software</block>
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Aggiornamenti e patch</block>
-  <block id="3c0d9137e7a6bf6e7b1cbaad394ac5ec" category="inline-link-macro">Componenti per la distribuzione</block>
-  <block id="542e65f5a286fa6467f7b1c33bc0dab8" category="paragraph">Per maggiori informazioni sulla distribuzione, vedere<block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block> E<block ref="141d19b4a500cb7c8f293062f31c9e48" category="inline-link-macro-rx"></block> .</block>
   <block id="31486f17bb0da292e6faff47c42e27a2" category="summary">Keystone è un modello di servizio basato su abbonamento e con pagamento in base alla crescita, pensato per le aziende che preferiscono modelli di consumo OpEx rispetto a CapEx anticipati o leasing.</block>
   <block id="8ae3d79d3f1b6cb3022dbfb96c477b67" category="doc">Scopri di più su NetApp Keystone</block>
   <block id="6d7eb772ffa1657b401639ad7643de00" category="paragraph">NetApp Keystone è un modello di servizio basato su abbonamento e con pagamento in base al consumo che offre un'esperienza cloud ibrida senza interruzioni alle aziende che preferiscono modelli di consumo delle spese operative rispetto a spese in conto capitale iniziali o leasing per soddisfare le proprie esigenze di archiviazione e protezione dei dati.</block>
@@ -407,7 +404,6 @@
   <block id="9e38decf152b1fba3ebe0ddbb861a5a3" category="inline-link-macro">Servizi aggiuntivi in Keystone STaaS</block>
   <block id="91ad65d98336ef29959957165ed0c9ea" category="list-text"><block ref="91ad65d98336ef29959957165ed0c9ea" category="inline-link-macro-rx"></block></block>
   <block id="d534e2cd061f06b6e0ad742d6dda7fee" category="list-text"><block ref="d534e2cd061f06b6e0ad742d6dda7fee" category="inline-link-macro-rx"></block></block>
-  <block id="d7e5ccf918d68bf60a6b52690444d5ea" category="list-text"><block ref="d7e5ccf918d68bf60a6b52690444d5ea" category="inline-link-macro-rx"></block></block>
   <block id="df7d31258a77cf6838aec404025cc8f0" category="list-text"><block ref="df7d31258a77cf6838aec404025cc8f0" category="inline-link-macro-rx"></block></block>
   <block id="f29d51ebfc7a851025b60dc1bcc5560e" category="summary">Keystone offre un modello di pagamento basato sulla crescita per soddisfare le tue esigenze di consumo flessibili e scalabili.</block>
   <block id="ef379c37057d9a196c5c79f68a141fe6" category="paragraph">Keystone ti offre i seguenti servizi di fatturazione:</block>
@@ -850,7 +846,6 @@
   <block id="7605fc3bbddce380c28f25b5327f5fab" category="paragraph"><block ref="7605fc3bbddce380c28f25b5327f5fab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="572eb7b481dd9edd4e8e79e98f5702e7" category="paragraph">Questo processo crea un<block ref="db5570bf61464b46e2bde31ed61a7dc6" prefix=" " category="inline-code"></block> pacchetto nella posizione indicata che può essere condiviso con NetApp per la risoluzione dei problemi.</block>
   <block id="df607436cb358c9158c17df17c648c95" category="summary">Keystone offre una modalità di distribuzione _privata_, nota anche come _dark site_, per soddisfare le tue esigenze aziendali e di sicurezza.</block>
-  <block id="89776fa991dc9a854be133c1980588a2" category="doc">Scopri di più su Keystone (modalità privata)</block>
   <block id="5580118283395cf4a34aae1cbd8449f9" category="paragraph">Keystone offre una modalità di distribuzione _privata_, nota anche come _dark site_, per soddisfare le tue esigenze aziendali e di sicurezza.  Questa modalità è disponibile per le organizzazioni con limitazioni di connettività.</block>
   <block id="992dbd3c9033c22e0a3a71601032b203" category="paragraph">NetApp offre una distribuzione specializzata di Keystone STaaS, pensata appositamente per ambienti con connettività Internet limitata o assente (noti anche come dark site).  Si tratta di ambienti sicuri o isolati in cui la comunicazione esterna è limitata per motivi di sicurezza, conformità o requisiti operativi.</block>
   <block id="875907ebe59351ce3319b9b573d3a1a4" category="paragraph">Per NetApp Keystone, offrire servizi per i dark site significa fornire il servizio di abbonamento allo storage flessibile Keystone in un modo che rispetti i vincoli di questi ambienti.  Ciò comporta:</block>
@@ -1376,7 +1371,6 @@
   <block id="9ce62eb0f672e21ccd91e690812cac59" category="list-title">VM del server Keystone Collector:</block>
   <block id="3cd8ee624224889231554d68f6c0f471" category="list-text">Core: 2 CPU</block>
   <block id="729c0bdf36ec5a81531eff6e6786c89d" category="list-text">Memoria RAM: 4 GB di RAM</block>
-  <block id="6154780a7a0c05ce30f1c45aee04101c" category="doc">Monitora lo stato di salute di Keystone Collector</block>
   <block id="527a4a001d7f838ad6b3f5b6dd352957" category="paragraph">È possibile monitorare lo stato di Keystone Collector utilizzando qualsiasi sistema di monitoraggio che supporti le richieste HTTP.  Il monitoraggio dello stato di salute può aiutare a garantire che i dati siano disponibili sulla dashboard Keystone .</block>
   <block id="4cb7202e970020325d85bd7795afbf5c" category="list-text">*403*: indica che il client HTTP che interroga lo stato di integrità non è presente nell'elenco _allow_, ovvero un elenco di CIDR di rete consentiti.  Per questo stato non vengono restituite informazioni sanitarie.  L'elenco _allow_ utilizza il metodo CIDR di rete per controllare quali dispositivi di rete sono autorizzati a interrogare il sistema sanitario Keystone .  Se ricevi questo errore, aggiungi il tuo sistema di monitoraggio all'elenco _consentito_ da * Keystone Collector management TUI &gt; Configura &gt; Monitoraggio integrità*.</block>
   <block id="e30da5eac07974449eb112c2a4b1bbdc" category="admonition-title">Utenti Linux, tenete presente questo problema noto:</block>
@@ -1936,7 +1930,6 @@
   <block id="da50043d1f7c61447ab36e5a81e7ab67" category="section-title">Eseguire la chiamata API</block>
   <block id="ffc141c1c95ba83a77683a29e2e3c158" category="paragraph">Dopo aver generato correttamente un token di accesso, è possibile eseguire chiamate API Digital Advisor autorizzate per ottenere le informazioni richieste.</block>
   <block id="b5db1df1ea6118ca7ac1ab438161410f" category="summary">L'API REST Digital Advisor recupera i dettagli del consumo corrente per tutti gli abbonamenti associati al customerID specificato.</block>
-  <block id="8bc9e7b2eb702a14a34a24bcc32c172d" category="doc">Ottieni i dettagli sui consumi dei clienti utilizzando l'API REST Digital Advisor</block>
   <block id="60da99bd88f7966b796873420df2f1c3" category="paragraph">Questa API recupera i dettagli sui consumi correnti per tutti gli abbonamenti associati al customerID specificato.</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">OTTENERE</block>
   <block id="41d2da547ce3e763f6eead2948c7bce6" category="cell">*Punto finale*</block>
@@ -1953,15 +1946,12 @@
   <block id="d4232bc3d79f7c2651bc3b089aa822c1" category="list-text">to_date_utc: &lt;data di fine (nel formato RFC3339)&gt;</block>
   <block id="eb53e4bff92730b260ff2452a158fac7" category="paragraph">L'API risponderà con un oggetto JSON contenente un elenco di tutti gli abbonamenti con le metriche storiche di utilizzo del servizio per il cliente specificato nell'intervallo di tempo selezionato.  Ecco un esempio di risposta:</block>
   <block id="f9758d05812567489fe8755ed9e896cf" category="summary">L'API REST Digital Advisor recupera un elenco di tutti gli ID cliente associati all'utente.</block>
-  <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">Ottieni un elenco di tutti i clienti che utilizzano l'API REST Digital Advisor</block>
   <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="paragraph">Questa API recupera un elenco di tutti i customerID associati all'utente.</block>
   <block id="beadb7936ab29d8bd492fb93114101f3" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" prefix="" category="inline-code"></block></block>
   <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">L'API risponderà con un oggetto JSON contenente un elenco di nomi di clienti e rispettivi ID.  Ecco un esempio di risposta:</block>
   <block id="b964b33b06c664e35c5f043238992fba" category="summary">L'API REST Digital Advisor recupera un elenco di tutti gli abbonamenti e livelli di servizio associati al customerID specificato.</block>
-  <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">Ottieni abbonamenti clienti utilizzando l'API REST Digital Advisor</block>
   <block id="2c74d7df1fc4058a6a46b83d4b38bb2a" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" prefix="" category="inline-code"></block></block>
   <block id="67b63898a05fe3ab08e6c0690cc73ca3" category="summary">Le API Digital Advisor forniscono un'interfaccia programmatica per recuperare i dettagli e le metriche del servizio Keystone .</block>
-  <block id="0a076b1454da01faf38e4805c15570ee" category="doc">Inizia a utilizzare l'API REST Digital Advisor per recuperare i dati Keystone</block>
   <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">L'API REST Digital Advisor fornisce un'interfaccia programmatica per recuperare i dettagli relativi all'abbonamento e al consumo Keystone .</block>
   <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">Ad alto livello, il flusso di lavoro per interagire con l'API REST Digital Advisor prevede i seguenti passaggi:</block>
   <block id="6c0397360aa8b37bbbe1fa3a38744674" category="inline-link">Accedi a Digital Advisor.</block>
@@ -2155,7 +2145,6 @@
   <block id="fbb165d9f99339f62e1190730a20d297" category="sidebar">Supporto protetto degli Stati Uniti (USPS)</block>
   <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="sidebar">Disponibilità</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">Sostenibilità</block>
-  <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">Accedi a Keystone dall'API REST di Digital Advisor</block>
   <block id="087e52621b1299752b891e4115749950" category="sidebar">Servizi di abbonamento Keystone versione 1</block>
   <block id="738272188927126099f39cbe7024dbf9" category="section-title">Capire i prezzi</block>
   <block id="a9defa509a6012981ff7f002dd53d0e6" category="paragraph">Il prezzo del servizio aggiuntivo di protezione avanzata dei dati è calcolato in base alla capacità impegnata in ogni sito.  Ciò aiuta a determinare il costo effettivo del servizio avanzato di protezione dei dati in $/TiB. I costi aggiuntivi si applicano a tutte le capacità del tuo abbonamento, inclusi i dati sorgente, le copie speculari e i dati non speculari.</block>
@@ -2414,7 +2403,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 novembre 2025</block>
   <block id="0c359189f8e07afc4bf0a432b108a2f7" category="list-text">Il cliente fornisce un server Linux in esecuzione su uno dei seguenti sistemi operativi: Debian 12, Red Hat Enterprise Linux 8.6 o versioni successive 8.x, Red Hat Enterprise Linux 9.0 o versioni successive oppure CentOS 7 (solo per ambienti esistenti). Il software Keystone viene installato utilizzando<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> O<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> pacchetto, a seconda della distribuzione Linux.</block>
   <block id="188a74af3438876c97ac7877f4af6cc9" category="list-text">Il cliente fornisce un server Linux in esecuzione su Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Red Hat Enterprise Linux 9.0, Amazon Linux 2023 o versioni più recenti.</block>
-  <block id="079d46d4e807d9ca797d92cd97e9c5ea" category="list-text">I crediti di servizio potranno essere applicati a una fattura futura. I crediti di servizio non si applicano agli abbonamenti Keystone scaduti. Per saperne di più, fare riferimento a <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>.</block>
   <block id="8e3e0d66dd46c331ec4b3a698a38a9e7" category="list-text">Puoi richiedere modifiche alla capacità impegnata tramite la Console o dal tuo Keystone Success Manager (KSM). Per informazioni sulla richiesta di modifiche, vedere <block ref="4e739353290fa4a9ebb5e0d958a5945c" category="inline-link-macro-rx"></block>.</block>
   <block id="17766f6125f71fd7cf26ceef70d4e504" category="list-text">Una volta scaricato il file, è possibile allegarlo al ticket di supporto Keystone ServiceNow. Per informazioni sull'emissione dei biglietti, vedere <block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>.</block>
   <block id="fd9138bbd3a6e55b24c6c044d67e4bc1" category="list-text">Sistema operativo (scegline uno):</block>
@@ -2459,14 +2447,11 @@
   <block id="e6031ccc926a297ed489fed2eb5fc832" category="paragraph">Per abilitare i servizi NetApp Keystone STaaS sono necessari diversi componenti. Prima di iniziare, esamina questi componenti.</block>
   <block id="7b2a0cab269bf73e47e958a9123402e1" category="doc">Componente aggiuntivo Data Infrastructure Insights per Keystone</block>
   <block id="f4661181da0130d61f3128498582908f" category="doc">Servizio aggiuntivo di tiering dei dati per Keystone</block>
-  <block id="ac6db46674728d3a4cb59b937dd96ead" category="doc">Comprendere l'infrastruttura Keystone</block>
-  <block id="62fb7818da74bdf8e586f11aa4b2f85f" category="doc">Componenti non restituibili e non volatili e servizio aggiuntivo di conformità SnapLock per Keystone</block>
   <block id="43b82c4e7e58013ebe91d40fcb3f7718" category="doc">SLO di disponibilità per Keystone</block>
   <block id="259bdb910694b04b20beea4776938bc1" category="doc">SLO di prestazioni per Keystone</block>
   <block id="55f8301e147b74d377ba17c059419cab" category="doc">Garanzia di recupero ransomware per Keystone</block>
   <block id="34a4bf3e6647e3dbdeb2e4f10c663eab" category="doc">SLO di sostenibilità per Keystone</block>
   <block id="27aa1272743b7f2386d3189a53b56acd" category="doc">Componente aggiuntivo USPS per Keystone</block>
-  <block id="640eca2728ec0e817f889513c2454e02" category="doc">Prepararsi all'installazione Keystone Collector in modalità privata</block>
   <block id="52f54d887aa41d09a6436a07a2e0764c" category="doc">Requisiti per ONTAP e StorageGRID per Keystone</block>
   <block id="116f188b55b3963186369fe6e76fae16" category="doc">Installa Keystone ITOM Collector sui sistemi Linux</block>
   <block id="d647eab7452f325c298991f79290af31" category="doc">Installa Keystone ITOM Collector sui sistemi Windows</block>
@@ -2477,7 +2462,6 @@
   <block id="1dd0253353633fba5037901ed7ca93a1" category="doc">Visualizza i volumi ONTAP e i dettagli di archiviazione degli oggetti per gli abbonamenti Keystone</block>
   <block id="8beb28d57ca1bb568fef4619e190f809" category="doc">Genera token di aggiornamento e accesso per Keystone</block>
   <block id="bac9b6c348c931a976006431b4b392d7" category="doc">Ottieni i dettagli sui consumi dei clienti Keystone utilizzando l'API REST Digital Advisor</block>
-  <block id="70233a54c59d50201e00e568353b8e42" category="doc">Ottieni un elenco di tutti i clienti Keystone che utilizzano l'API REST Digital Advisor</block>
   <block id="bb9f69edc6b159c2172c134f7b8ec8d9" category="doc">Ottieni abbonamenti clienti Keystone utilizzando l'API REST Digital Advisor</block>
   <block id="ec3c5dc2acc96dd435267e93ff378ceb" category="sidebar">Scopri di più sui servizi aggiuntivi</block>
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">Scopri di più su Keystone STaaS SLO</block>
@@ -2542,7 +2526,6 @@
   <block id="c7ce58326ff0d43313f58438432618e4" category="inline-image-macro">Immagine della topologia ADP che mostra il sito primario (Cluster A), il sito mirror (Cluster B), gli indicatori di stato della connessione, lo stato di sincronizzazione e ONTAP Mediator</block>
   <block id="485a60e9684d6db386d471e94d4f8e6e" category="paragraph"><block ref="485a60e9684d6db386d471e94d4f8e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cf2a22df63f7c801c01cfb4ed82fab" category="admonition">È possibile selezionare la sottoscrizione Cluster B (mirror) dalla topologia ADP per visualizzarla come sito primario.</block>
-  <block id="ea463c160b93aefec442f24e23176210" category="admonition">Se lo stato di sincronizzazione risulta non sincronizzato o lo stato di connessione risulta degradato, fare riferimento a <block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block> per risolvere il problema.</block>
   <block id="8f2ab845f0c2b21de9dce9bacddaabcb" category="list-text">Visualizza le tendenze storiche del consumo per il sito primario o mirror.</block>
   <block id="3427110bee6003dd0893bac8f65d3026" category="paragraph">In *Utilizzo della capacità*, seleziona *Visualizza* accanto a Cluster A (primary) o Cluster B (mirror).</block>
   <block id="d9e6be64cc5e0800433f8124d52098c6" category="inline-link-macro">Visualizza le tendenze di consumo per le tue sottoscrizioni Keystone</block>
@@ -2796,4 +2779,24 @@
   <block id="2699cef281fc3da983c3d28aec2a40f0" category="list-text">*Monitoraggio dell'utilizzo della capacità*: gli avvisi si basano sulla percentuale di burst garantito del tuo abbonamento, anziché su un valore fisso. Ad esempio, se il tuo burst garantito è 40%, l'avviso critico si attiva quando l'utilizzo della capacità raggiunge il 140% della capacità garantita.</block>
   <block id="68590e28745629d3e9c45d233ec874f4" category="paragraph">Nella scheda *Andamento dei consumi* di Digital Advisor, il grafico dell'andamento dei consumi non visualizza i dati relativi al giorno corrente, ma solo quelli del giorno precedente.</block>
   <block id="c11ff4c4af6e617e0c27f005526215c1" category="paragraph">2026-08-10</block>
+  <block id="92f0ca3d130ab33a16d28b57af2ef1fa" category="doc">Scopri l'infrastruttura Keystone</block>
+  <block id="ce554340b5d358edd16adc582cbd1e9f" category="doc">Metriche e definizioni di storage STaaS di Keystone</block>
+  <block id="efc51c397e61250c642c86d68b092174" category="doc">NRNVC e SnapLock servizio aggiuntivo di conformità per Keystone</block>
+  <block id="7e09a61a4369064a74afa38f6e7a8c9a" category="paragraph">Per ulteriori informazioni sulla distribuzione, vedi <block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block> e <block ref="79f76dbd81e71f36d15d1dac3766b8c8" category="inline-link-macro-rx"></block>.</block>
+  <block id="d03ef5b6e8b6191ac72b7ae5462d2546" category="list-text"><block ref="d03ef5b6e8b6191ac72b7ae5462d2546" category="inline-link-macro-rx"></block></block>
+  <block id="b3e473fe04a8ccacad32fa6cbce9ed33" category="inline-link-macro">Servizi di supporto per Keystone</block>
+  <block id="7f0b447c374e3209d4e9d60f6086fb1e" category="list-text">I crediti di servizio possono essere applicati a una fattura futura. I crediti di servizio non si applicano agli abbonamenti Keystone scaduti. Per saperne di più, consulta <block ref="1ed065cbb5ab0431ea9f338f6c76a9cb" category="inline-link-macro-rx"></block>.</block>
+  <block id="041ae70f8ef408ca128653efabef68e1" category="doc">Scopri Keystone in modalità privata</block>
+  <block id="caa17ce055116ffaa788d2f0023a3fb8" category="doc">Requisiti di installazione per Keystone Collector in modalità privata</block>
+  <block id="4c9bf1be0907afa10a65b5bd2b4f0538" category="doc">Monitoraggio dello stato di salute per Keystone Collector</block>
+  <block id="e20b97662a63cdd3b7aeb4920b33801f" category="admonition">Se lo stato di sincronizzazione risulta non sincronizzato o lo stato di connessione risulta degradato, fare riferimento a <block ref="1ed065cbb5ab0431ea9f338f6c76a9cb" category="inline-link-macro-rx"></block> per risolvere il problema.</block>
+  <block id="9af3a80255b1f2badb4f52464dc42a1a" category="paragraph">Nella scheda *Andamento dei consumi* di Digital Advisor, il grafico a raffica dei consumi fatturati mostra valori diversi per lo stesso periodo di fatturazione a seconda dell'intervallo di date selezionato.</block>
+  <block id="46c131fa48958e881a135770d82d1ed2" category="paragraph">2026-08-31</block>
+  <block id="b08f54c4c682a7fbc5eae73108b111da" category="doc">Ottieni l'elenco dei clienti Keystone utilizzando la REST API di Digital Advisor</block>
+  <block id="f6dd1ff13cc1aa67dc8eba5d6efe56ab" category="doc">Recupera i dati di Keystone tramite l'API REST di Digital Advisor</block>
+  <block id="5cf41fde5a4334e75c952ba76173f057" category="sidebar">Digital Advisor REST API per Keystone</block>
+  <block id="10348511187b7d51a49e8d1ed75f42fe" category="sidebar">Inizia a utilizzare l'API REST di Digital Advisor</block>
+  <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">Ottieni un elenco dei clienti Keystone</block>
+  <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">Ottieni gli abbonamenti dei clienti Keystone</block>
+  <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">Ottieni i dettagli sui consumi dei clienti Keystone</block>
 </blocks>
