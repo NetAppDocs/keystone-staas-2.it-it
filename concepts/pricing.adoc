@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/pricing.html 
 keywords: pricing, billing introduction, Keystone billing 
-summary: Keystone offre un modello di pagamento basato sulla crescita per soddisfare le tue esigenze di consumo flessibili e scalabili. 
+summary: Con NetApp Keystone STaaS, paghi per ciò a cui ti impegni e paghi un extra solo per ciò che utilizzi oltre tale impegno. Questa pagina spiega come funziona il modello pay-as-you-go, dal prezzo del tuo impegno di storage alla misurazione e fatturazione della capacità, fino al momento in cui vengono generate le fatture. 
 ---
-= Scopri la fatturazione Keystone
+= Scopri la fatturazione STaaS di Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

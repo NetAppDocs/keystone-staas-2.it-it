@@ -29,9 +29,9 @@ sidebar:
       url: "/release-notes/known-limitations.html"
   - title: Iniziare
     entries:
-    - title: Scopri di più su Keystone STaaS
+    - title: Scopri di più su NetApp Keystone
       url: "/concepts/overview.html"
-    - title: Infrastruttura Keystone
+    - title: Infrastruttura Keystone STaaS
       url: "/concepts/infra.html"
     - title: Collezionista Keystone
       url: "/installation/installation-overview.html"
@@ -41,7 +41,7 @@ sidebar:
       url: "/concepts/data-flow.html"
     - title: Modelli operativi
       url: "/concepts/operational-models.html"
-  - title: Impostare e configurare Keystone
+  - title: Configura e configura Keystone STaaS
     entries:
     - title: Requisiti
       entries:
@@ -79,7 +79,7 @@ sidebar:
         url: "/installation/upgrade.html"
     - title: Sicurezza di Keystone Collector
       url: "/installation/security.html"
-    - title: Dati raccolti per la fatturazione
+    - title: Dati raccolti da Keystone Collector
       url: "/installation/data-collection.html"
     - title: Keystone in modalità privata
       entries:
@@ -155,7 +155,7 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: Requisiti di capacità per i livelli di servizio prestazionali
         url: "/concepts/capacity-requirements.html"
-    - title: Scopri di più sui servizi aggiuntivi
+    - title: Servizi aggiuntivi di Keystone STaaS
       entries:
       - title: Protezione avanzata dei dati
         url: "/concepts/adp.html"
@@ -177,11 +177,11 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: Garanzia di recupero dal ransomware
         url: "/concepts/sla-ransomware.html"
-    - title: Comprendere la fatturazione Keystone
+    - title: Comprendere la fatturazione di Keystone STaaS
       entries:
-      - title: Scopri la fatturazione Keystone
+      - title: Scopri la fatturazione STaaS di Keystone
         url: "/concepts/pricing.html"
-      - title: Fatturazione Keystone per tipologie di volume specifiche
+      - title: Fatturazione Keystone STaaS per tipi di volume specifici
         url: "/concepts/misc-volume-billing.html"
   - title: Digital Advisor REST API per Keystone
     entries:
@@ -197,7 +197,7 @@ sidebar:
       url: "/rest-api/get-customer-consumption.html"
   - title: Servizi di abbonamento Keystone versione 1
     url: "/subscription-services-v1.html"
-  - title: Servizi di supporto per Keystone
+  - title: Servizi di supporto per Keystone STaaS
     url: "/concepts/support-services.html"
   - title: Note legali
     url: "/legal-notices.html"

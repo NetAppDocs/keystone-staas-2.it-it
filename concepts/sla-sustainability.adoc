@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-sustainability.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: 'Keystone fornisce una misurazione garantita del numero massimo di watt effettivi per tebibyte (W/TiB) per i servizi di storage basati su array di storage flash ONTAP con Sustainability SLO.' 
+summary: 'Scopri come l"SLO di sostenibilità di Keystone STaaS definisce gli obiettivi di consumo di energia per la tua implementazione e come richiedere crediti di servizio se tali obiettivi non vengono raggiunti.' 
 ---
-= SLO di sostenibilità per Keystone
+= SLO di sostenibilità per Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

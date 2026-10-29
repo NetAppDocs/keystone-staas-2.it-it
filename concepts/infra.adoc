@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: 'L"infrastruttura Keystone , la progettazione, la scelta della tecnologia e i prodotti componenti sono di esclusiva proprietà di NetApp.' 
+summary: 'L"infrastruttura, la progettazione, la scelta della tecnologia e i prodotti componenti di Keystone STaaS sono di esclusiva competenza di NetApp.' 
 ---
-= Scopri l'infrastruttura Keystone
+= Scopri l'infrastruttura Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'L"infrastruttura Keystone , la progettazione, la scelta della tecnolog
 
 
 [role="lead"]
-NetApp è l'unica responsabile dell'infrastruttura, della progettazione, delle scelte tecnologiche e dei componenti di Keystone, che si applicano sia agli ambienti NetApp che a quelli gestiti dai clienti.
+NetApp è l'unica responsabile dell'infrastruttura, della progettazione, delle scelte tecnologiche e dei componenti di Keystone STaaS, che si applica sia agli ambienti gestiti da NetApp sia a quelli gestiti dal cliente.
 
 NetApp si riserva il diritto di intraprendere le seguenti azioni:
 

@@ -14,7 +14,7 @@ summary: In qualità di abbonato a NetApp Keystone STaaS, puoi accedere alla das
 
 
 [role="lead"]
-È possibile accedere alla dashboard Keystone tramite la console NetApp o Digital Advisor dopo aver sottoscritto i servizi NetApp Keystone .
+Puoi accedere alla dashboard Keystone per il tuo abbonamento Keystone STaaS tramite NetApp Console o Digital Advisor.
 
 [role="tabbed-block"]
 ====
